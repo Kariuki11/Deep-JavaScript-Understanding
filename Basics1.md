@@ -2,7 +2,7 @@
 
 ---
 
-### ✅ 1. **What ECMAScript Is**
+### 1. **What ECMAScript Is**
 
 * ECMAScript is the **standard specification** that JavaScript implements.
 * It defines the **language rules**, not how input/output happens — I/O is handled by **host environments** like browsers or Node.js.
@@ -10,7 +10,7 @@
 
 ---
 
-### ✅ 2. **Host Environments**
+### 2. **Host Environments**
 
 * ECMAScript relies on **external environments** (hosts) to be useful.
 
@@ -21,14 +21,14 @@
 
 ---
 
-### ✅ 3. **Scripting Language Origins**
+### 3. **Scripting Language Origins**
 
 * JavaScript started as a **scripting language** to automate or enhance existing systems (like websites).
 * Now, it has evolved into a **general-purpose language** used across client, server, mobile, and even embedded devices.
 
 ---
 
-### ✅ 4. **Object-Based Design**
+### 4. **Object-Based Design**
 
 * **Everything in JavaScript is an object or behaves like one.**
 * Objects are collections of **properties** (key–value pairs) with attributes (e.g., writable or not).
@@ -37,7 +37,7 @@
 
 ---
 
-### ✅ 5. **Functions and Methods**
+### 5. **Functions and Methods**
 
 * Functions are **first-class objects** — they can be stored, passed, or returned like variables.
 * A **method** is simply a function stored in an object property.
