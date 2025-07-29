@@ -104,7 +104,7 @@
 
 ---
 
-## 🧠 Summary: If You Understand These, You Understand JS
+## Summary: If You Understand These, You Understand JS
 
 * JavaScript is defined by ECMAScript — it handles the language core.
 * Hosts (like browsers or Node.js) extend JS with I/O and APIs.
