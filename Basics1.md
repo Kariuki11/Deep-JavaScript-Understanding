@@ -115,5 +115,3 @@
 * `"use strict"` improves safety and debugging.
 
 ---
-
-Would you like a **printable 1-page cheat sheet** or a **Notion doc version** of this summary for daily review?
