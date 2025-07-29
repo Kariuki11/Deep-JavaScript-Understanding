@@ -1,5 +1,5 @@
 H
-## **Core ECMAScript (JavaScript) Concepts You Must Understand**
+## **Core ECMAScript (JavaScript) Concepts.**
 
 ---
 
