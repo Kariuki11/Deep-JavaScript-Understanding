@@ -1,6 +1,6 @@
-**Essential ECMAScript Terms for JavaScript Developers**
+**Essential ECMAScript Terms**
 
-Below is a breakdown of the most important ECMAScript terms from section 4.4 with their meanings, usage, and examples in JavaScript. These are core to understanding how JavaScript (the language based on ECMAScript) works.
+Below is a breakdown of the most important ECMAScript terms with their meanings, usage, and examples in JavaScript. These are core to understanding how JavaScript (the language based on ECMAScript) works.
 
 ---
 
