@@ -194,4 +194,3 @@ If you're brushing up, **mastering ECMAScript fundamentals is like mastering the
 
 ---
 
-Would you like this turned into a PDF, a Notion document, or a printable study sheet?
