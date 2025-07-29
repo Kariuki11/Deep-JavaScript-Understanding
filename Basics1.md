@@ -1,4 +1,3 @@
-H
 ## **Core ECMAScript (JavaScript) Concepts.**
 
 ---
