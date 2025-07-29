@@ -1,8 +1,5 @@
-Here’s a distilled set of **the most important notes** from that ECMAScript documentation overview — tailored to help you **understand JavaScript deeply and practically** as a software engineer revisiting the basics:
-
----
-
-## 🔑 **Core ECMAScript (JavaScript) Concepts You Must Understand**
+H
+## **Core ECMAScript (JavaScript) Concepts You Must Understand**
 
 ---
 
