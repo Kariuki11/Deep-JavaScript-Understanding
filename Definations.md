@@ -231,8 +231,4 @@ console.log(dog.barks); // own
 ```js
 const nums = [1, 2, 3];
 console.log(nums.map(n => n * 2));
-```
-
----
-
-This summary helps you understand and use ECMAScript’s foundational concepts practically as a JavaScript developer.
+``
