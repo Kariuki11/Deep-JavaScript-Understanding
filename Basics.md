@@ -12,7 +12,7 @@
 
 ---
 
-### 🟩 What ECMAScript Covers (vs What It Doesn’t)
+###  What ECMAScript Covers (vs What It Doesn’t)
 
 | Covered by ECMAScript                       | Not Covered (Host APIs)                         |
 | ------------------------------------------- | ----------------------------------------------- |
@@ -32,7 +32,7 @@ So when you learn **core JavaScript**, you're really learning **ECMAScript**.
 
 ## 🔹 **Shallow Introduction to JavaScript (Core ECMAScript Basics)**
 
-### 🟨 1. **Syntax & Structure**
+### 1. **Syntax & Structure**
 
 Defined by ECMAScript:
 
@@ -46,7 +46,7 @@ const age = 25;        // constant value
 
 ---
 
-### 🟨 2. **Types (Primitives & Objects)**
+###  2. **Types (Primitives & Objects)**
 
 According to ECMAScript, JavaScript has:
 
@@ -75,7 +75,7 @@ let numbers = [1, 2, 3];
 
 ---
 
-### 🟨 3. **Variables & Declarations**
+###  3. **Variables & Declarations**
 
 ECMAScript (ES6) defines three ways:
 
@@ -87,7 +87,7 @@ const c = 3;  // block-scoped, immutable
 
 ---
 
-### 🟨 4. **Scope & Hoisting**
+###  4. **Scope & Hoisting**
 
 * **Scope** is how ECMAScript handles variable accessibility.
 * **Hoisting**: Declarations are moved to the top of their scope during compilation.
