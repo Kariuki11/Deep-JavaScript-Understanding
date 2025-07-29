@@ -44,7 +44,7 @@
 
 ---
 
-### ✅ 6. **Prototype-Based Inheritance**
+### 6. **Prototype-Based Inheritance**
 
 * JS uses **prototypes** instead of classical inheritance.
 * Every object has an internal link (`[[Prototype]]`) to another object.
@@ -53,14 +53,14 @@
 
 ---
 
-### ✅ 7. **Class Syntax (Since ES6)**
+### 7. **Class Syntax (Since ES6)**
 
 * JavaScript added `class` syntax for convenience, but **under the hood, it’s still prototype-based**.
 * You can define classes using `class` and `constructor`, but it compiles to the same old prototype logic.
 
 ---
 
-### ✅ 8. **Built-In Objects and Utilities**
+### 8. **Built-In Objects and Utilities**
 
 * ECMAScript includes:
 
@@ -70,7 +70,7 @@
 
 ---
 
-### ✅ 9. **Operators**
+### 9. **Operators**
 
 * ECMAScript defines a wide range of operators:
 
@@ -83,7 +83,7 @@
 
 ---
 
-### ✅ 10. **Modules**
+### 10. **Modules**
 
 * ECMAScript supports **modular programming** via:
 
@@ -93,7 +93,7 @@
 
 ---
 
-### ✅ 11. **Strict Mode**
+### 11. **Strict Mode**
 
 * `"use strict";` enables a stricter version of JavaScript:
 
