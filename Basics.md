@@ -99,7 +99,7 @@ var a = 10;
 
 ---
 
-### 🟨 5. **Functions**
+###  5. **Functions**
 
 ECMAScript treats functions as **first-class citizens**:
 
@@ -119,7 +119,7 @@ Functions have access to:
 
 ---
 
-### 🟨 6. **Control Flow**
+###  6. **Control Flow**
 
 Defined by the ES spec:
 
@@ -135,7 +135,7 @@ Also includes: `switch`, `for`, `while`, `break`, `continue`, etc.
 
 ---
 
-### 🟨 7. **Error Handling**
+### 7. **Error Handling**
 
 Standardized in ECMAScript:
 
@@ -149,7 +149,7 @@ try {
 
 ---
 
-### 🟨 8. **Objects & Prototypes**
+### 8. **Objects & Prototypes**
 
 ECMAScript uses **prototype-based inheritance**:
 
@@ -166,7 +166,7 @@ dog.speak();  // Inherits from animal
 
 ---
 
-### 🟨 9. **ES6+ Features (Modern ECMAScript)**
+### 9. **ES6+ Features (Modern ECMAScript)**
 
 * **Destructuring**
 * **Default parameters**
@@ -186,7 +186,7 @@ async function fetchData() {
 
 ---
 
-## 🧠 Summary
+## Summary
 
 > JavaScript is an **implementation of ECMAScript**, and everything from `let` to `async/await`, functions, scope, and prototype inheritance is defined in the **ECMAScript specification**.
 
