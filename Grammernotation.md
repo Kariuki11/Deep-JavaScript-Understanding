@@ -1,4 +1,4 @@
-### ✅ Part 1: Core Data Types and Values
+### Part 1: Core Data Types and Values
 
 #### **1. Primitive Values**
 
