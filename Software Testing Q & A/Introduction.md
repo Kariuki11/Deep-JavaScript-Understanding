@@ -36,5 +36,5 @@ Typically Testing is classified into three categories.
             UAT ( User Acceptance Testing) - Final testing by the actual users or clients to see if the software meets their needs.
             Localization - Tests if the app works correctly in a specific language, region, or culture (like currency or date format in Kenya).
             Globalization - Ensures the app can be used in multiple countries/languages without breaking (language switching, encoding).
-            Interoperability
+            Interoperability - Checks if the system works well with other systems or software (e.g., integrates with PayPal or external APIs).
             So on
