@@ -53,3 +53,6 @@ Typically Testing is classified into three categories.
 **2. Non Functional Testing**  -  This kind of Testing checks how well the system performs rather than what it does.
 
 It focuses on things like speed, usability, reliability, and capacity — not the actual features.
+
+            Performance Testing - Checks how fast the system responds under normal conditions.
+            
