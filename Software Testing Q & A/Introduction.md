@@ -18,3 +18,11 @@ Software Testing is Important because if there are any bugs or errors in the sof
 *Customer Satisfaction:* The main aim of any product is to give satisfaction to their customers. UI/UX Testing ensures the best user experience.
 
 **Testing in Software Engineering**  - As per ANSI/IEEE 1059, Testing in Software Engineering is a process of evaluating a software product to find whether the current software product meets the required conditions or not. The testing process involves evaluating the features of the software product for requirements in terms of any missing requirements, bugs or errors, security, reliability and performance.
+
+**Types of Software Testing**
+
+Typically Testing is classified into three categories.
+
+1. Functional Testing
+2. Non-Functional Testing or Performance Testing
+3. Maintenance (Regression and Maintenance)
