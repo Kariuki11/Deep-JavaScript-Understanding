@@ -49,3 +49,7 @@ Typically Testing is classified into three categories.
             Performance Testing - Measures how fast and stable the system is under load (e.g., 1000 users login at once).
 
             Security Testing - Checks if the system is protected against attacks, data leaks, unauthorized access, etc.
+
+**2. Non Functional Testing**  - Non-Functional Testing checks how well the system performs rather than what it does.
+
+It focuses on things like speed, usability, reliability, and capacity — not the actual features.
