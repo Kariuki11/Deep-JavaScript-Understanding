@@ -63,3 +63,5 @@ It focuses on things like speed, usability, reliability, and capacity — not th
             Endurance (Soak) Testing - Checks if the system can run smoothly for a long time (e.g., 24+ hrs).
 
             Volume Testing - Tests how the system performs with a large amount of data (e.g., 1 million records).
+
+            Scalability Testing - Checks if the system can grow and still perform well when more users or data are added.
