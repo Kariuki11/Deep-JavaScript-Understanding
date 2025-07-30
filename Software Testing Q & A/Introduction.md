@@ -32,7 +32,7 @@ Typically Testing is classified into three categories.
 
     Checks if the system does what it's supposed to do, based on requirements (e.g. login works, form submits).
 
-            Unit Testing
+            Unit Testing  - Tests individual pieces of code (like functions or methods) in isolation. Done by developers.
             Integration Testing
             Smoke
             UAT ( User Acceptance Testing)
