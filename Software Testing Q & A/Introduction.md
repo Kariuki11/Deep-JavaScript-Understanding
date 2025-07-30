@@ -70,4 +70,8 @@ It focuses on things like speed, usability, reliability, and capacity — not th
 
             Compatibility Testing - Ensures the system works on different devices, browsers, or OSs.
 
+**3. Maintenance**  -  Testing done after the software has been released, to handle updates, bug fixes, patches, or improvements.
+
+It includes regression tests, but also other tests related to changes after deployment.
+
 
