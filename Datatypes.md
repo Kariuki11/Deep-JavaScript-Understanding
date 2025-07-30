@@ -181,4 +181,164 @@ These are immutable data that are not objects.
 * Explicit conversion needed between Number and BigInt
 * String conversions follow specific radix rules (2-36)
 
-> ✅ Understanding these core concepts will help you work effectively with JavaScript's type system and avoid common pitfalls.
+
+
+Here's a breakdown of **Functions, Closures, `this`, and Execution Context**—the core of Week 2 in your ECMAScript roadmap:
+
+---
+
+### ✅ **Part 2: Functions, Closures, `this`, and Execution Context**
+
+---
+
+#### **1. Functions**
+
+**Definition:** A reusable block of code that performs a task or returns a value.
+
+##### Types of functions:
+
+* **Function Declaration**
+
+  ```js
+  function greet(name) {
+    return `Hello, ${name}`;
+  }
+  ```
+
+* **Function Expression**
+
+  ```js
+  const greet = function(name) {
+    return `Hello, ${name}`;
+  };
+  ```
+
+* **Arrow Function**
+
+  ```js
+  const greet = (name) => `Hello, ${name}`;
+  ```
+
+##### Key Concepts:
+
+* Functions are **first-class citizens** (can be assigned to variables, passed as arguments).
+
+* **Default Parameters**
+
+  ```js
+  function greet(name = "Guest") {
+    return `Hi, ${name}`;
+  }
+  ```
+
+* **Rest Parameters**
+
+  ```js
+  function sum(...args) {
+    return args.reduce((a, b) => a + b, 0);
+  }
+  ```
+
+* **Return Values**
+
+  ```js
+  function add(a, b) {
+    return a + b;
+  }
+  ```
+
+---
+
+#### **2. `this` Keyword**
+
+**Definition:** Refers to the object that is executing the current function.
+
+##### Behavior depends on how the function is called:
+
+* **In global context**
+
+  ```js
+  console.log(this); // window (in browser)
+  ```
+
+* **In object method**
+
+  ```js
+  const user = {
+    name: "Ken",
+    greet() {
+      console.log(this.name); // Ken
+    }
+  };
+  ```
+
+* **Arrow function**
+
+  * Does **not** bind its own `this`; it inherits from the outer scope.
+
+  ```js
+  const person = {
+    name: "Ken",
+    greet: () => {
+      console.log(this.name); // undefined
+    }
+  };
+  ```
+
+##### Manual Control:
+
+* `call()`, `apply()`, `bind()`
+
+---
+
+#### **3. Closures**
+
+**Definition:** A closure is a function that **remembers** variables from its lexical (outer) scope, even after that scope has closed.
+
+##### Example:
+
+```js
+function outer() {
+  let count = 0;
+  return function inner() {
+    count++;
+    console.log(count);
+  };
+}
+
+const counter = outer();
+counter(); // 1
+counter(); // 2
+```
+
+✅ **Why it matters:** Closures enable private variables, function factories, and custom iterators.
+
+---
+
+#### **4. Execution Context**
+
+**Definition:** The environment in which JavaScript code is evaluated and executed.
+
+##### Key Phases:
+
+1. **Creation Phase** – Hoisting happens here.
+2. **Execution Phase** – Code is run line-by-line.
+
+##### Call Stack:
+
+* JS is single-threaded.
+* Tracks function calls using a stack (LIFO).
+
+```js
+function a() {
+  b();
+}
+function b() {
+  console.log("In B");
+}
+a(); // Call stack: a -> b -> console
+```
+
+---
+
+Let me know if you'd like this added to the document or want to go deeper into one of the sections (e.g., hoisting, `bind`, async stack tracing, etc.).
