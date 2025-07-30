@@ -65,3 +65,9 @@ It focuses on things like speed, usability, reliability, and capacity — not th
             Volume Testing - Tests how the system performs with a large amount of data (e.g., 1 million records).
 
             Scalability Testing - Checks if the system can grow and still perform well when more users or data are added.
+
+            Usability Testing - Tests how easy and intuitive the app is for real users to use.
+
+            Compatibility Testing - Ensures the system works on different devices, browsers, or OSs.
+
+
