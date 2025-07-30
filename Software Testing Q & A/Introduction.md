@@ -74,8 +74,6 @@ It focuses on things like speed, usability, reliability, and capacity — not th
 
 It includes regression tests, but also other tests related to changes after deployment.
 
-            Regression - Testing done to make sure new code changes didn’t break existing features.
-
-Think of it as: “Make sure the old stuff still works after adding new stuff.”
+            Regression - Testing done to make sure new code changes didn’t break existing features. Think of it as: “Make sure the old stuff still works after adding new stuff.”
 
 
