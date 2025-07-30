@@ -56,4 +56,6 @@ It focuses on things like speed, usability, reliability, and capacity — not th
 
             Performance Testing - Checks how fast the system responds under normal conditions.
 
-            Load Testing - Tests how thejiohy users or requests at the same time.
+            Load Testing - Tests how the system handles many users or requests at the same time.
+
+            Stress Testing - Pushes the system beyond its limits to see how it breaks or recovers.
