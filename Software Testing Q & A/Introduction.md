@@ -29,6 +29,7 @@ Typically Testing is classified into three categories.
 
 
 **1. Functional Testing**
+    Checks if the system does what it's supposed to do, based on requirements (e.g. login works, form submits).
 
             Unit Testing
             Integration Testing
