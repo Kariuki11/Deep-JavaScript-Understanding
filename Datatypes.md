@@ -142,7 +142,7 @@ These are immutable data that are not objects.
 
 ---
 
-### 📌 Summary of ECMAScript Data Types and Values
+### Summary of ECMAScript Data Types and Values
 
 #### **Key Concepts for Developers to Understand:**
 
