@@ -49,6 +49,7 @@ These are immutable data that are not objects.
     ```
 
 * **BigInt**
+    BigInt is a primitive data type in JavaScript used to represent integers larger than the safe limit for regular Number types.
 
   * **Meaning:** For arbitrarily large integers.
   * **Behavior:** Exact mathematical operations, no implicit conversion with Number.
