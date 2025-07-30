@@ -26,6 +26,7 @@ These are immutable data that are not objects.
     ```
 
 * **Boolean**
+    A Boolean is a primitive data type in JavaScript (and ECMAScript in general) that represents one of two values:
 
   * **Values:** `true` or `false`
   * **Example:**
@@ -35,6 +36,7 @@ These are immutable data that are not objects.
     ```
 
 * **Number**
+    Numbers are a primitive type that represent numeric values, including:
 
   * **Includes:** integers, floats, `Infinity`, `-Infinity`, and `NaN`
   * **Details:** IEEE 754 double-precision floating point (64-bit)
