@@ -31,7 +31,9 @@ Typically Testing is classified into three categories.
 **1. Functional Testing**  -  Checks if the system does what it's supposed to do, based on requirements (e.g. login works, form submits).
 
             Unit Testing  - Tests individual pieces of code (like functions or methods) in isolation. Done by developers.
+
             Integration Testing  - Tests how different parts/modules work together, like database + API + frontend.
+            
             Smoke - A quick test to check if the core functions of the app work (e.g., app launches, API is reachable). Like a sanity check.
             UAT ( User Acceptance Testing) - Final testing by the actual users or clients to see if the software meets their needs.
             Localization - Tests if the app works correctly in a specific language, region, or culture (like currency or date format in Kenya).
