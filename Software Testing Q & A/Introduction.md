@@ -33,11 +33,17 @@ Typically Testing is classified into three categories.
             Unit Testing  - Tests individual pieces of code (like functions or methods) in isolation. Done by developers.
 
             Integration Testing  - Tests how different parts/modules work together, like database + API + frontend.
-            
+
             Smoke - A quick test to check if the core functions of the app work (e.g., app launches, API is reachable). Like a sanity check.
+
             UAT ( User Acceptance Testing) - Final testing by the actual users or clients to see if the software meets their needs.
+
             Localization - Tests if the app works correctly in a specific language, region, or culture (like currency or date format in Kenya).
+
             Globalization - Ensures the app can be used in multiple countries/languages without breaking (language switching, encoding).
+
             Interoperability - Checks if the system works well with other systems or software (e.g., integrates with PayPal or external APIs).
+
             Sanity Testing - A quick check to see if a specific bug is fixed and nothing major is broken after that fix.
+            
             Performance Testing - Measures how fast and stable the system is under load (e.g., 1000 users login at once).
