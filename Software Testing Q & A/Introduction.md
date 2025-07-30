@@ -26,3 +26,15 @@ Typically Testing is classified into three categories.
 1. Functional Testing
 2. Non-Functional Testing or Performance Testing
 3. Maintenance (Regression and Maintenance)
+
+
+**1. Functional Testing**
+
+            Unit Testing
+            Integration Testing
+            Smoke
+            UAT ( User Acceptance Testing)
+            Localization
+            Globalization
+            Interoperability
+            So on
