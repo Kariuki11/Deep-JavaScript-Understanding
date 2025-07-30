@@ -33,7 +33,7 @@ Typically Testing is classified into three categories.
             Unit Testing  - Tests individual pieces of code (like functions or methods) in isolation. Done by developers.
             Integration Testing  - Tests how different parts/modules work together, like database + API + frontend.
             Smoke - A quick test to check if the core functions of the app work (e.g., app launches, API is reachable). Like a sanity check.
-            UAT ( User Acceptance Testing)
+            UAT ( User Acceptance Testing) - Final testing by the actual users or clients to see if the software meets their needs.
             Localization
             Globalization
             Interoperability
