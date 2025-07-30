@@ -45,5 +45,7 @@ Typically Testing is classified into three categories.
             Interoperability - Checks if the system works well with other systems or software (e.g., integrates with PayPal or external APIs).
 
             Sanity Testing - A quick check to see if a specific bug is fixed and nothing major is broken after that fix.
-            
+
             Performance Testing - Measures how fast and stable the system is under load (e.g., 1000 users login at once).
+
+            Security Testing - Checks if the system is protected against attacks, data leaks, unauthorized access, etc.
