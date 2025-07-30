@@ -60,6 +60,7 @@ These are immutable data that are not objects.
     ```
 
 * **String**
+    A String in JavaScript is a primitive data type used to represent text — sequences of characters enclosed in quotes.
 
   * **Meaning:** Text data represented as sequences of UTF-16 code units (max length 2⁵³-1)
   * **Operations:** Handle surrogate pairs carefully
