@@ -55,4 +55,5 @@ Typically Testing is classified into three categories.
 It focuses on things like speed, usability, reliability, and capacity — not the actual features.
 
             Performance Testing - Checks how fast the system responds under normal conditions.
-            
+
+            Load Testing - Tests how the system handles many users or requests at the same time.
