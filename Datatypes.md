@@ -99,7 +99,7 @@ These are immutable data that are not objects.
   ```js
   const user = {
     name: "Kenneth",
-    age: 25,
+    age: 27,
     greet() {
       console.log(`Hello, my name is ${this.name}`);
     }
@@ -144,7 +144,7 @@ These are immutable data that are not objects.
 
 ### 📌 Summary of ECMAScript Data Types and Values
 
-#### ✅ **Key Concepts for Developers to Understand:**
+#### **Key Concepts for Developers to Understand:**
 
 ##### 1. Primitive Types
 
