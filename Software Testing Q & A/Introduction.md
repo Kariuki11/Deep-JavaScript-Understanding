@@ -59,3 +59,5 @@ It focuses on things like speed, usability, reliability, and capacity — not th
             Load Testing - Tests how the system handles many users or requests at the same time.
 
             Stress Testing - Pushes the system beyond its limits to see how it breaks or recovers.
+
+            Endurance (Soak) Testing - Checks if the system can run smoothly for a long time (e.g., 24+ hrs).
