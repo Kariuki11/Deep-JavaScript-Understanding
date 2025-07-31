@@ -137,4 +137,25 @@ Testers cannot simply depend on existing test techniques. He must look out conti
 You think a company like MICROSOFT would not have tested their OS thoroughly & would risk their reputation just to see their OS crashing during its public launch!
 
 
+**4) Testing shows a presence of defects**  -  Hence, testing principle states that – Testing talks about the presence of defects and doesn’t talk about the absence of defects. i.e. Software Testing reduces the probability of undiscovered defects remaining in the software but even if no defects are found, it is not a proof of correctness.
+
+But what if, you work extra hard, taking all precautions & make your software product 99% bug-free. And the software does not meet the needs & requirements of the clients.
+
+This leads us to our next principle, which states that- Absence of Error
+
+
+**5) Absence of Error – fallacy**  -  It is possible that software which is 99% bug-free is still unusable. This can be the case if the system is tested thoroughly for the wrong requirement. Software testing is not mere finding defects, but also to check that software addresses the business needs. The absence of Error is a Fallacy i.e. Finding and fixing defects does not help if the system build is unusable and does not fulfill the user’s needs & requirements.
+
+To solve this problem, the next principle of testing states that Early Testing
+
+
+**6) Early Testing**  -  Early Testing – Testing should start as early as possible in the Software Development Life Cycle. So that any defects in the requirements or design phase are captured in early stages. 
+It is much cheaper to fix a Defect in the early stages of testing. But how early one should start testing? It is recommended that you start finding the bug the moment the requirements are defined.
+More on this principle in a later training tutorial.
+
+
+
+
+
+
 
