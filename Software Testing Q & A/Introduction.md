@@ -121,5 +121,12 @@ The Seven Software Testing principles are:
     So if you were testing this Operating system, you would realize that defects are likely to be found in multi-tasking activity and need to be tested thoroughly which brings us to our next principle Defect Clustering
 
 
+**2) Defect Clustering** - Defect Clustering which states that a small number of modules contain most of the defects detected. This is the application of the Pareto Principle to software testing: approximately 80% of the problems are found in 20% of the modules.
+
+By experience, you can identify such risky modules. But this approach has its own problems
+
+If the same tests are repeated over and over again, eventually the same test cases will no longer find new bugs.
+
+
 
 
