@@ -90,3 +90,9 @@ Program Testing in software testing is a method of executing an actual software 
 The software program is executed with test case data to analyse the program behavior or response to the test data. A good program testing is one which has high chances of finding bugs.
 
 
+
+
+
+## **7 Principles of Software Testing with Examples**
+
+
