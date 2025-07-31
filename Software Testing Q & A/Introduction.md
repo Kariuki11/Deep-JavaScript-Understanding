@@ -107,6 +107,7 @@ The Seven Software Testing principles are:
 
 
 **1) Exhaustive testing is not possible**
+
     Yes! Exhaustive testing is not possible. Instead, we need the optimal amount of testing based on the risk assessment of the application.
 
     And the million dollar question is, how do you determine this risk?
