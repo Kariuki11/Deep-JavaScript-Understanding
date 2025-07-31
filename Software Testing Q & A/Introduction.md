@@ -128,7 +128,8 @@ By experience, you can identify such risky modules. But this approach has its ow
 If the same tests are repeated over and over again, eventually the same test cases will no longer find new bugs.
 
 
-**3) Pesticide Paradox**  -  Repetitive use of the same pesticide mix to eradicate insects during farming will over time lead to the insects developing resistance to the pesticide Thereby ineffective of pesticides on insects. The same applies to software testing. If the same set of repetitive tests are conducted, the method will be useless for discovering new defects.
+**3) Pesticide Paradox**  -  Repetitive use of the same pesticide mix to eradicate insects during farming will over time lead to the insects developing resistance to the pesticide Thereby ineffective of pesticides on insects. 
+The same applies to software testing. If the same set of repetitive tests are conducted, the method will be useless for discovering new defects.
 
 To overcome this, the test cases need to be regularly reviewed & revised, adding new & different test cases to help find more defects.
 
@@ -144,7 +145,9 @@ But what if, you work extra hard, taking all precautions & make your software pr
 This leads us to our next principle, which states that- Absence of Error
 
 
-**5) Absence of Error – fallacy**  -  It is possible that software which is 99% bug-free is still unusable. This can be the case if the system is tested thoroughly for the wrong requirement. Software testing is not mere finding defects, but also to check that software addresses the business needs. The absence of Error is a Fallacy i.e. Finding and fixing defects does not help if the system build is unusable and does not fulfill the user’s needs & requirements.
+**5) Absence of Error – fallacy**  -  It is possible that software which is 99% bug-free is still unusable. This can be the case if the system is tested thoroughly for the wrong requirement.
+Software testing is not mere finding defects, but also to check that software addresses the business needs. 
+The absence of Error is a Fallacy i.e. Finding and fixing defects does not help if the system build is unusable and does not fulfill the user’s needs & requirements.
 
 To solve this problem, the next principle of testing states that Early Testing
 
@@ -152,6 +155,22 @@ To solve this problem, the next principle of testing states that Early Testing
 **6) Early Testing**  -  Early Testing – Testing should start as early as possible in the Software Development Life Cycle. So that any defects in the requirements or design phase are captured in early stages. 
 It is much cheaper to fix a Defect in the early stages of testing. But how early one should start testing? It is recommended that you start finding the bug the moment the requirements are defined.
 More on this principle in a later training tutorial.
+
+
+**7) Testing is context dependent**  -  Testing is context dependent which basically means that the way you test an e-commerce site will be different from the way you test a commercial off the shelf application.
+ All the developed software’s are not identical. You might use a different approach, methodologies, techniques, and types of testing depending upon the application type. 
+ For instance testing, any POS system at a retail store will be different than testing an ATM machine.
+
+
+##**V-Model in Software Testing**
+
+V Model is a highly disciplined SDLC model which has a testing phase parallel to each development phase.
+The V model is an extension of the waterfall model wherein software development and testing is executed in a sequential way. It is known as the Validation or Verification Model.
+                SDLC - Software Development Life Cycle
+
+
+
+
 
 
 
