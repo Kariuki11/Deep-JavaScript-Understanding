@@ -95,4 +95,16 @@ The software program is executed with test case data to analyse the program beha
 
 ## **7 Principles of Software Testing with Examples**
 
+The Seven Software Testing principles are:
+
+1) Exhaustive testing is not possible
+2) Defect Clustering
+3) Pesticide Paradox
+4) Testing shows presence of defects
+5) Absence of Error – fallacy
+6) Early Testing
+7) Testing is context dependent
+
+
+
 
