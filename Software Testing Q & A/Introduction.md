@@ -162,7 +162,7 @@ More on this principle in a later training tutorial.
  For instance testing, any POS system at a retail store will be different than testing an ATM machine.
 
 
-##**V-Model in Software Testing**
+## **V-Model in Software Testing**
 
 V Model is a highly disciplined SDLC model which has a testing phase parallel to each development phase.
 The V model is an extension of the waterfall model wherein software development and testing is executed in a sequential way. It is known as the Validation or Verification Model.
