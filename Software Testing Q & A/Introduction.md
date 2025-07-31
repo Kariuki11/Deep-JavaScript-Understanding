@@ -128,5 +128,13 @@ By experience, you can identify such risky modules. But this approach has its ow
 If the same tests are repeated over and over again, eventually the same test cases will no longer find new bugs.
 
 
+**3) Pesticide Paradox**  -  Repetitive use of the same pesticide mix to eradicate insects during farming will over time lead to the insects developing resistance to the pesticide Thereby ineffective of pesticides on insects. The same applies to software testing. If the same set of repetitive tests are conducted, the method will be useless for discovering new defects.
+
+To overcome this, the test cases need to be regularly reviewed & revised, adding new & different test cases to help find more defects.
+
+Testers cannot simply depend on existing test techniques. He must look out continually to improve the existing methods to make testing more effective. But even after all this sweat & hard work in testing, you can never claim your product is bug-free. To drive home this point, let’s see this video of the public launch of Windows 98
+
+You think a company like MICROSOFT would not have tested their OS thoroughly & would risk their reputation just to see their OS crashing during its public launch!
+
 
 
