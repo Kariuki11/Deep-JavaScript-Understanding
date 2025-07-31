@@ -106,5 +106,19 @@ The Seven Software Testing principles are:
 7) Testing is context dependent
 
 
+**1) Exhaustive testing is not possible**
+    Yes! Exhaustive testing is not possible. Instead, we need the optimal amount of testing based on the risk assessment of the application.
+
+    And the million dollar question is, how do you determine this risk?
+
+    To answer this let’s do an exercise
+
+    In your opinion, Which operation is most likely to cause your Operating system to fail?
+
+    I am sure most of you would have guessed, Opening 10 different application all at the same time.
+
+    So if you were testing this Operating system, you would realize that defects are likely to be found in multi-tasking activity and need to be tested thoroughly which brings us to our next principle Defect Clustering
+
+
 
 
