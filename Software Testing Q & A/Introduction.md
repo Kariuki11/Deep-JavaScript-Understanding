@@ -85,4 +85,8 @@ Integration testing: It focuses on the construction and design of the software. 
 
 System testing: In this method, your software is compiled as a whole and then tested as a whole. This testing strategy checks the functionality, security, portability, amongst others.
 
+**Program Testing**
+Program Testing in software testing is a method of executing an actual software program with the aim of testing program behavior and finding errors. 
+The software program is executed with test case data to analyse the program behavior or response to the test data. A good program testing is one which has high chances of finding bugs.
+
 
