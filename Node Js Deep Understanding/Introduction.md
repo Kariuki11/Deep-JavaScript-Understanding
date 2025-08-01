@@ -95,3 +95,73 @@
 
 ## **Introduction to Node Package Manager (NPM)**
 
+
+Here’s a **key point summary** of what you need to understand about **npm (Node Package Manager)**:
+
+---
+
+### 🔹 **What is npm?**
+
+* **Default package manager** for Node.js.
+* Hosts **millions of packages** (largest code repository for any language).
+* Also used in frontend JS projects.
+
+---
+
+### 🔹 **Installing Packages**
+
+* `npm install`: Installs all dependencies listed in `package.json`.
+* `npm install <package-name>`: Installs a specific package and adds it to dependencies (since npm v5).
+
+---
+
+### 🔹 **Important Flags**
+
+* `--save-dev` (`-D`): Adds to `devDependencies` (for development tools).
+* `--save-optional` (`-O`): Adds to `optionalDependencies` (fail-safe installs).
+* `--no-save`: Installs package without updating `package.json`.
+
+---
+
+### 🔹 **Updating Packages**
+
+* `npm update`: Updates all packages.
+* `npm update <package-name>`: Updates a specific package.
+
+---
+
+### 🔹 **Versioning**
+
+* Uses **Semantic Versioning (semver)**.
+* You can install specific versions:
+  `npm install <package-name>@<version>`
+
+---
+
+### 🔹 **Scripts**
+
+* Define custom tasks in `package.json` under the `scripts` key.
+* Run tasks using `npm run <task-name>`.
+* Example:
+
+  ```json
+  {
+    "scripts": {
+      "dev": "webpack --config webpack.config.js"
+    }
+  }
+  ```
+
+---
+
+### 🔹 **Alternatives**
+
+* Other package managers: **Yarn**, **pnpm**.
+
+---
+
+### ✅ **Key Takeaway**
+
+npm helps manage **project dependencies**, **versions**, and **task automation**, making Node.js app development efficient and consistent.
+
+
