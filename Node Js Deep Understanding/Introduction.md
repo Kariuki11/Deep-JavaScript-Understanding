@@ -165,10 +165,7 @@ npm helps manage **project dependencies**, **versions**, and **task automation**
 ## **ECMAScript 2015 (ES6) And Beyond**
 
 
-
-Here’s a **key point summary** of what you need to understand about **ECMAScript (ES6+) in Node.js**:
-
----
+--
 
 ### 🔹 **Modern JavaScript Support in Node.js**
 
