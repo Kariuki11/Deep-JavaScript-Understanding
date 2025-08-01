@@ -93,7 +93,7 @@
 9. As JS apps have become larger and longer-running (e.g., full apps in the browser), **compiling JS now makes sense for performance**.
 
 
-# **Introduction To Node Package Manager (NPM)**
+## **Introduction To Node Package Manager (NPM)**
 
 
 ### 🔹 **What is npm?**
@@ -156,8 +156,67 @@
 
 ---
 
-### ✅ **Key Takeaway**
+### **Key Takeaway**
 
 npm helps manage **project dependencies**, **versions**, and **task automation**, making Node.js app development efficient and consistent.
+
+
+
+## **ECMAScript 2015 (ES6) And Beyond**
+
+
+
+Here’s a **key point summary** of what you need to understand about **ECMAScript (ES6+) in Node.js**:
+
+---
+
+### 🔹 **Modern JavaScript Support in Node.js**
+
+* Node.js is built on **V8**, which regularly adopts **new ECMAScript features**.
+* **ES6 (2015)** and many newer features are **fully supported** in modern Node versions.
+
+---
+
+### 🔹 **Feature Categories in V8 / Node.js**
+
+1. **Shipping Features**:
+
+   * Stable and **enabled by default** in Node.js.
+2. **Staged Features**:
+
+   * Not yet stable, require the `--harmony` or `--es_staging` flag.
+3. **In-Progress Features**:
+
+   * Experimental, unstable, and require **specific harmony flags** (not recommended for production).
+
+---
+
+### 🔹 **Managing Experimental Features**
+
+* Use `--harmony` or `--es_staging` only **for testing** or experimentation.
+* In **production**, avoid these flags unless necessary.
+
+---
+
+### 🔹 **Check Feature Compatibility**
+
+* Use [**node.green**](https://node.green) for a **visual compatibility table** of ECMAScript features across Node.js versions.
+
+---
+
+### 🔹 **Check V8 Version**
+
+* To find out which **V8 version** your Node.js binary uses:
+
+  ```bash
+  node -p process.versions.v8
+  ```
+
+---
+
+### ✅ **Key Takeaway**
+
+Stay updated with Node.js versions to access modern JS features **safely and without flags**. Use experimental flags like `--harmony` **cautiously**, especially in production.
+
 
 
