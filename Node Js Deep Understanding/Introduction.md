@@ -93,7 +93,7 @@
 9. As JS apps have become larger and longer-running (e.g., full apps in the browser), **compiling JS now makes sense for performance**.
 
 
-## **Introduction to Node Package Manager (NPM)**
+# **Introduction To Node Package Manager (NPM)**
 
 
 ### 🔹 **What is npm?**
