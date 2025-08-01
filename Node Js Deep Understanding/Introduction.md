@@ -35,7 +35,6 @@
 
     ## **Differences Between Node Js And The Browser**
 
-    Here’s a **key point summary** of the differences between **Node.js and the browser**:
 
 1. **Same language, different environments**: Both use JavaScript, but for very different purposes (Node.js = server-side, Browser = client-side).
 
