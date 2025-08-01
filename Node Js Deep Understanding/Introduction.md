@@ -32,3 +32,37 @@
 
 11. To run a Node.js app:
     Save as `server.js` and run with `node server.js` in the terminal.
+
+    ## **Differences Between Node Js And The Browser**
+
+    Here’s a **key point summary** of the differences between **Node.js and the browser**:
+
+1. **Same language, different environments**: Both use JavaScript, but for very different purposes (Node.js = server-side, Browser = client-side).
+
+2. **DOM access**:
+
+   * **Browser**: Has access to DOM, `window`, `document`, etc.
+   * **Node.js**: Does **not** have these – it's a non-browser environment.
+
+3. **APIs**:
+
+   * **Browser**: Web APIs like localStorage, cookies.
+   * **Node.js**: Provides powerful **system-level APIs** (e.g., filesystem, networking).
+
+4. **Environment control**:
+
+   * **Node.js**: You control the runtime version (e.g., Node 18, Node 20).
+   * **Browser**: You **don’t control** the user's browser version.
+
+5. **Modern JavaScript support**:
+
+   * **Node.js**: Can use modern ES6+ features directly.
+   * **Browser**: May require tools like **Babel** for compatibility.
+
+6. **Module systems**:
+
+   * **Node.js**: Supports both **CommonJS (`require`)** and **ES Modules (`import`)**.
+   * **Browser**: Primarily supports **ES Modules** (`import`).
+
+7. **Full-stack JS benefit**: Node.js lets you build both frontend and backend in **one language**, giving JavaScript developers a big productivity boost.
+
