@@ -96,10 +96,6 @@
 ## **Introduction to Node Package Manager (NPM)**
 
 
-Here’s a **key point summary** of what you need to understand about **npm (Node Package Manager)**:
-
----
-
 ### 🔹 **What is npm?**
 
 * **Default package manager** for Node.js.
