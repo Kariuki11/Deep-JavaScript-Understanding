@@ -11,3 +11,7 @@
 3. **3. How would you perform UI testing for the virtual card issuance flow on mobile and web?**
         - To test the virtual card issuance flow on mobile and web, 
         I would design a mix of functional, usability, and cross-platform UI tests — both manually and with automation — to ensure users can smoothly create a virtual card and view it securely.
+
+4. **4. Describe how you would verify integration with external APIs (e.g. MoneyGram, banking API, crypto minting).**
+        - To verify integration with external APIs like MoneyGram, banking systems, or crypto minting services, 
+        I would design a mix of functional, contract, reliability, and security tests — ensuring the app interacts with third parties accurately, safely, and under various conditions.
