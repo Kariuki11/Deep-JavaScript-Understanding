@@ -327,7 +327,7 @@ WebAssembly.instantiate(wasmBuffer).then(wasmModule => {
 
 ---
 
-### ✅ **Key Takeaways**
+### **Key Takeaways**
 
 * **WebAssembly adds high-performance compute capabilities to Node.js.**
 * It requires `.wasm` files, which can be created from languages like C, Rust, or AssemblyScript.
