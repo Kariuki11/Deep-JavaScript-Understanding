@@ -7,3 +7,5 @@
 2. **What security test cases would you design for login and wallet authorization flows?**
         - For a fintech app handling sensitive wallet and identity data — I’d design a comprehensive set of security test cases to validate login and wallet authorization, covering authentication, 
         session handling, data protection, and attack prevention.
+
+3. **3. How would you perform UI testing for the virtual card issuance flow on mobile and web?**
