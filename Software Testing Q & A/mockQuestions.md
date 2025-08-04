@@ -9,3 +9,5 @@
         session handling, data protection, and attack prevention.
 
 3. **3. How would you perform UI testing for the virtual card issuance flow on mobile and web?**
+        - To test the virtual card issuance flow on mobile and web, 
+        I would design a mix of functional, usability, and cross-platform UI tests — both manually and with automation — to ensure users can smoothly create a virtual card and view it securely.
