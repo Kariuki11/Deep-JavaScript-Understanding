@@ -15,3 +15,7 @@
 4. **4. Describe how you would verify integration with external APIs (e.g. MoneyGram, banking API, crypto minting).**
         - To verify integration with external APIs like MoneyGram, banking systems, or crypto minting services, 
         I would design a mix of functional, contract, reliability, and security tests — ensuring the app interacts with third parties accurately, safely, and under various conditions.
+5. **How would you design a stress/load testing scenario for payment remittance during high‑traffic spikes?**
+        - To design a stress and load testing scenario for payment remittance, especially during traffic spikes (like Black Friday or salary days), 
+        I would simulate high-volume transactions under controlled environments using realistic data, measure system performance, and identify breaking points to ensure the platform remains stable and reliable under pressure.
+        
