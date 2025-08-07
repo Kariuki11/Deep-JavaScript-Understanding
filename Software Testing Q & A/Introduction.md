@@ -17,6 +17,20 @@ There are two principles to quality assurance.
 One is “fit for purpose,” meaning the product or service meets its intended purpose. 
 The other is “right first time,” in which any mistakes are immediately addressed.
 
+Quality Assurance Testing
+
+Testing is the process used to execute a system of quality assurance. 
+It’s used to detect problems in a product or service. The importance of quality testing is obvious: the product or service that’s completed improperly will dissatisfy the stakeholder, 
+but there can also be safety issues that will put people in harm’s way if not addressed.
+
+    Test Case Development: The objective of test case development is to design specific test cases that help determine how the system will be tested. For example, some activities may including writing detailed test cases or scripts that determine what actions should be performed as well as the expected results and the test environment. 
+    It also ensures both positive and negative scenarios are covered.
+    
+    Test Environment Setup: The goal is to prepare the hardware, software and network configuration that is needed to execute test cases. This involves setting up the test environments, including servers, databases and any needed software testing tools. It also consists of installing and configuring software, establishing test data and verifying that the environment is a reflection of the production environment.
+    Test Execution: The objective of the test execution is to run the test cases against the product or system to determine if there are issues. Some example activities include recording the results of tests, executing test cases, documenting bugs or defects and communicating issues to the development team.
+    Defect Reporting and Tracking: The goal of this step is to log and manage defects or bugs that were identified during the testing stage. Some activities can include monitoring the status of defects, reporting defects via a tracking system or detailing the severity of the defects.
+
+
 
 
 **What are the benefits of Software Testing?**
