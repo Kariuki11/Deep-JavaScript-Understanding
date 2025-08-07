@@ -7,6 +7,18 @@ Software Testing is a method to check whether the actual software product matche
 
 Software Testing is Important because if there are any bugs or errors in the software, it can be identified early and can be solved before delivery of the software product. Properly tested software product ensures reliability, security and high performance which further results in time saving, cost effectiveness and customer satisfaction.
 
+**Quality Assurance vs. Quality Control**
+While QA and QC are closely linked, they are distinct concepts when it comes to managing both product or service quality. 
+The main difference between QA and QC is that quality assurance focuses on planning to prevent risks that could affect quality during the production of services or goods, while 
+quality control focuses on testing the quality of the output once the product or service has been delivered.
+
+**Quality Assurance Principles**
+There are two principles to quality assurance. 
+One is “fit for purpose,” meaning the product or service meets its intended purpose. 
+The other is “right first time,” in which any mistakes are immediately addressed.
+
+
+
 **What are the benefits of Software Testing?**
 
 *Cost-Effective:* It is one of the important advantages of software testing. Testing any IT project on time helps you to save your money for the long term. In case if the bugs caught in the earlier stage of software testing, it costs less to fix.
