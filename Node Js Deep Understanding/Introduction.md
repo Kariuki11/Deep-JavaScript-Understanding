@@ -482,8 +482,98 @@ WebAssembly.instantiate(wasmBuffer).then(wasmModule => {
 
 ---
 
-If you want, I can also give you a **very short "mental model" diagram** showing where the native WebSocket client fits in compared to `ws` or `socket.io`. That would make the distinction crystal clear.
+### Security Best Practises in NodeJs
 
+
+## **Node.js Security Checklist**
+
+### **1. DoS & Resource Exhaustion**
+
+* ☐ Use a reverse proxy (Nginx, HAProxy) for load balancing & caching.
+* ☐ Set server timeouts (`headersTimeout`, `requestTimeout`, `keepAliveTimeout`).
+* ☐ Limit max concurrent sockets (`agent.maxSockets`).
+* ☐ Implement rate limiting (e.g., `express-rate-limit`).
+
+---
+
+### **2. Network Security**
+
+* ☐ Never run `--inspect` in production.
+* ☐ Block DNS rebinding: disable inspector on `SIGUSR1`.
+* ☐ Enforce HTTPS/TLS for all requests.
+
+---
+
+### **3. Sensitive Data Protection**
+
+* ☐ Use `.gitignore` / `.npmignore` to exclude secrets.
+* ☐ Run `npm publish --dry-run` before publishing.
+* ☐ Store secrets in environment variables (never commit `.env`).
+
+---
+
+### **4. HTTP Request Smuggling**
+
+* ☐ Disable `insecureHTTPParser`.
+* ☐ Configure proxy to normalize requests.
+* ☐ Use HTTP/2 end-to-end where possible.
+
+---
+
+### **5. Timing Attack Defense**
+
+* ☐ Compare secrets using `crypto.timingSafeEqual`.
+* ☐ Avoid branching or indexing based on secrets.
+
+---
+
+### **6. Supply Chain Security**
+
+* ☐ Pin all dependencies (exact versions).
+* ☐ Use lockfiles (`package-lock.json`).
+* ☐ Install with `npm ci`, not `npm install`.
+* ☐ Disable npm scripts: `npm config set ignore-scripts true`.
+* ☐ Audit regularly (`npm audit`, Socket.dev).
+
+---
+
+### **7. Memory Safety**
+
+* ☐ Use `--secure-heap=n` for sensitive data (Linux/macOS).
+* ☐ Avoid running production apps on shared machines.
+
+---
+
+### **8. Monkey Patching Prevention**
+
+* ☐ Run with `--frozen-intrinsics`.
+* ☐ Freeze `globalThis` to block global overrides.
+
+---
+
+### **9. Prototype Pollution Prevention**
+
+* ☐ Validate & sanitize all JSON input.
+* ☐ Use `Object.create(null)` for untrusted data objects.
+* ☐ Freeze prototypes & disable `__proto__` with `--disable-proto`.
+
+---
+
+### **10. Module Path Safety**
+
+* ☐ Use policy files with integrity checks to lock module paths.
+
+---
+
+### **11. General Best Practices**
+
+* ☐ Avoid experimental Node.js features in production.
+* ☐ Keep Node.js & dependencies up-to-date.
+* ☐ Apply security headers (e.g., Helmet).
+* ☐ Use containerization or service isolation for sensitive apps.
+* ☐ Monitor dependencies with OpenSSF Scorecard.
+
+---
 
 
 
