@@ -131,13 +131,10 @@
 
 ---
 
-### **What You Need to Master**
+### **What I Need to Master**
 
 * **Using `tsc`** → compile `.ts` to `.js`.
 * **Reading and fixing compiler errors**.
 * **Strict typing discipline** → don’t ignore TS errors.
 * **Workflow** → write TS → compile with `tsc` → run JS.
 
----
-
-If you want, I can now give you a **single “3-way to run TS” comparison table** for Native Node, Runners, and Transpilation so you instantly know which method to use.
