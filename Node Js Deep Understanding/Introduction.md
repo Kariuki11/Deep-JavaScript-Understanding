@@ -334,7 +334,68 @@ WebAssembly.instantiate(wasmBuffer).then(wasmModule => {
 * Interactions happen through the `WebAssembly` global object.
 * Great for **enhancing performance**, not for general-purpose logic or OS-level tasks.
 
-Let me know if you want a quick project example using Rust or C++ with WebAssembly in Node.js.
+
+### Debugging In Node Js
+
+**🔹 Core Concepts**
+
+* **Enable Inspector**: Use `--inspect` to allow debugging; default host/port → `127.0.0.1:9229`.
+* **Inspector API** replaces the old V8 Debugger Protocol from Node.js 8 onward.
+* **SIGUSR1** can trigger debugging on Unix systems (not Windows).
+
+**🔹 Security Essentials**
+
+* Debugger = full execution access → treat it as **high-risk** if exposed.
+* **NEVER** bind `--inspect` to a public IP (`0.0.0.0`) without secure controls (firewalls, VPN, SSH tunnel).
+* Even local (`127.0.0.1`) access is open to any local app on the machine.
+* DNS rebinding protection is built in (requires IP or exact `localhost` in Host header).
+
+**🔹 Connecting Debuggers**
+
+* **Chrome DevTools**: Open `chrome://inspect` or paste DevTools frontend URL.
+* **VS Code**: Configure `.vscode/launch.json` for Node.js debugging.
+* **Other IDEs**: WebStorm, Eclipse, Visual Studio, Gitpod support direct Node.js debugging.
+* **CLI Debugger**: `node inspect myscript.js`.
+
+**🔹 Common Flags**
+
+* `--inspect` → enable debugger on default host/port.
+* `--inspect=[host:port]` → custom host & port.
+* `--inspect-brk` → break before running any code.
+* `--inspect-wait` → wait until debugger is attached before continuing.
+* `node inspect script.js` → run under CLI debugger.
+
+**🔹 Remote Debugging (Safe Way)**
+
+* Keep Node.js listening only on localhost.
+* Use **SSH tunnels** to forward a local port to the remote debug port.
+
+  ```bash
+  ssh -L 9221:localhost:9229 user@remote.example.com
+  ```
+
+  Then connect debugger to `localhost:9221`.
+
+**🔹 Deprecated Tools**
+
+* Legacy `--debug` / `--debug-brk` / V8 Debug Protocol is no longer maintained.
+* Use `--inspect` instead.
+
+---
+
+**✅ What to Really Remember:**
+
+1. `--inspect` is the modern debugging method.
+2. Never expose your debug port publicly — always secure it.
+3. Chrome DevTools & VS Code are the most common and user-friendly debugger clients.
+4. For remote debugging, use SSH tunnels, not open ports.
+5. Know your main flags: `--inspect`, `--inspect-brk`, `--inspect-wait`.
+
+---
+
+If you want, I can also make you a **single-page “cheat sheet”** for **Node.js WebAssembly + Debugging** so you have both topics summarized together. That way you’ll have one quick reference for study.
+
+
 
 
 Go Throuugh: [text](https://www.tryexponent.com/blog/top-node-js-interview-questions)
