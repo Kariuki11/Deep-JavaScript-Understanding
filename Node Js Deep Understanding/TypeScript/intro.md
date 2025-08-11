@@ -64,4 +64,44 @@
 
 ---
 
-If you want, I can now give you a **one-page “Run TS in Node.js” quick cheat sheet** so you never have to reread long docs.
+
+Here’s the **short mastery version** from your text:
+
+---
+
+### **What You Need to Know**
+
+1. **Why use a runner?** – For advanced TS processing or Node.js < v22.7.0.
+2. **ts-node** – Runs TS directly **with type checking** by default.
+
+   ```bash
+   npm i -D ts-node  
+   npx ts-node file.ts
+   ```
+
+   Can disable type checking with `--transpile-only`.
+3. **tsx** – Runs TS directly **without type checking** (faster).
+
+   ```bash
+   npm i -D tsx  
+   npx tsx file.ts
+   ```
+4. **Register tsx with node** –
+
+   ```bash
+   node --import=tsx file.ts
+   ```
+5. **Type checking best practice** – Always run `tsc` before shipping, even if the runner doesn’t check.
+
+---
+
+### **What You Need to Master**
+
+* **When to choose ts-node** (needs type checking) vs **tsx** (faster, no type checking).
+* **How to install and run both**.
+* **Using `tsc` for separate type checking**.
+* **Registering tsx with node** for convenience.
+
+---
+
+If you want, I can now make you a **tiny table comparing ts-node, tsx, and native Node TS support** so you instantly know which to use in each case.
