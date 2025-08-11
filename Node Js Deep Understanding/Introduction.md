@@ -383,7 +383,7 @@ WebAssembly.instantiate(wasmBuffer).then(wasmModule => {
 
 ---
 
-**✅ What to Really Remember:**
+**What to Really Remember:**
 
 1. `--inspect` is the modern debugging method.
 2. Never expose your debug port publicly — always secure it.
@@ -393,7 +393,6 @@ WebAssembly.instantiate(wasmBuffer).then(wasmModule => {
 
 ---
 
-If you want, I can also make you a **single-page “cheat sheet”** for **Node.js WebAssembly + Debugging** so you have both topics summarized together. That way you’ll have one quick reference for study.
 
 
 
