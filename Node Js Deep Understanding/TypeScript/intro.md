@@ -65,11 +65,7 @@
 ---
 
 
-Here’s the **short mastery version** from your text:
-
----
-
-### **What You Need to Know**
+# Running TypeScript With A Runner
 
 1. **Why use a runner?** – For advanced TS processing or Node.js < v22.7.0.
 2. **ts-node** – Runs TS directly **with type checking** by default.
