@@ -448,7 +448,41 @@ WebAssembly.instantiate(wasmBuffer).then(wasmModule => {
 
 ---
 
-If you want, I can make a **single-page Undici Fetch API cheat sheet** with GET, POST, streaming, and pooling all in one place so you can reference it quickly while coding. That would make this info much easier to use in practice.
+
+## Native WebSocket Client in Node.js:
+
+
+**Core Concept**
+
+* **WebSocket**: A protocol for full-duplex (two-way) communication over a single TCP connection, using `ws://` (unencrypted) or `wss://` (encrypted).
+* Unlike HTTP, it allows the server to push data to the client without new requests.
+* Works well for **real-time applications** (chat, live data feeds, gaming, IoT).
+
+**Node.js Native WebSocket Client**
+
+* **Introduced in Node.js v21**, marked **stable in v22.4.0**.
+* Now supports **`new WebSocket()`** directly, no need for libraries like `ws` or `socket.io` for **client** connections.
+* Can send/receive text or JSON easily with `JSON.stringify()` & `JSON.parse()` plus error handling.
+* Reduces dependency management and ensures better **standards compliance**.
+
+**What It Can Do**
+
+* Connect to WebSocket servers.
+* Send and receive real-time messages (strings, JSON, binary data).
+* Listen for events: `open`, `message`, `close`, `error`.
+
+**Limitations**
+
+* **No built-in WebSocket server in Node.js** — still need external libraries (`ws`, `socket.io`, etc.) for accepting incoming WebSocket connections.
+* Native client is **only for connecting out** to servers, not for hosting.
+
+**Extra Tip**
+
+* Always handle **connection errors**, **message parsing errors**, and **clean up** connections (`close` event) to avoid memory leaks in long-running apps.
+
+---
+
+If you want, I can also give you a **very short "mental model" diagram** showing where the native WebSocket client fits in compared to `ws` or `socket.io`. That would make the distinction crystal clear.
 
 
 
