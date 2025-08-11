@@ -67,48 +67,45 @@ Here are some **common applications** where Node.js really shines:
 
 ---
 
-### **3. Data-Streaming Applications**
+### **c. Data-Streaming Applications**
 
 * **Examples:** Netflix video streaming, audio streaming platforms.
 * Reason: Node’s stream API processes files while they’re being uploaded/downloaded, reducing wait time.
 
 ---
 
-### **4. Single-Page Applications (SPAs)**
+### **d. Single-Page Applications (SPAs)**
 
 * **Examples:** Trello, Gmail-like apps.
 * Reason: Node.js pairs well with frontend frameworks (React, Angular, Vue) for fast, dynamic SPAs.
 
 ---
 
-### **5. IoT (Internet of Things)**
+### **e. IoT (Internet of Things)**
 
 * **Examples:** Smart home devices, sensor networks.
 * Reason: Node.js is lightweight and works well with microcontrollers and devices sending small, frequent messages.
 
 ---
 
-### **6. Collaborative Tools**
+### **f. Collaborative Tools**
 
 * **Examples:** Google Docs–style document editing, project management boards.
 * Reason: Real-time data synchronization between multiple users is easy with Node.js.
 
 ---
 
-### **7. Command-Line Tools**
+### **g. Command-Line Tools**
 
 * **Examples:** npm (itself built with Node.js), CLI automation tools.
 * Reason: Node.js can run scripts directly on the server or local machine.
 
 ---
 
-### **8. Server-Side Rendering (SSR)**
+### **h. Server-Side Rendering (SSR)**
 
 * **Examples:** Next.js apps, SEO-friendly content rendering.
 * Reason: Node.js can render dynamic content before sending it to the browser, improving SEO and performance.
 
----
-
-If you want, I can also **map each application type to an example architecture** showing **how Node.js fits in the system design** — that would make it easier to visualize.
 
 
