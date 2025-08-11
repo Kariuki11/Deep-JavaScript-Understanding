@@ -21,7 +21,7 @@
 ---
 
 
-### **What You Need to Master**
+### **What I Need to Master**
 
 
 * **Type Annotations** → How to specify types for variables, parameters, and return values.
@@ -31,3 +31,37 @@
 * **Using @types** → Adding type definitions for libraries.
 * **Basic Compilation** → Using `tsc` to transpile TS to JS.
 * **Working with `.d.ts` Files** → Reading and understanding type definitions.
+
+
+
+# Running Typescript Natively
+
+1. **Node.js v22.6+** – Can run TypeScript directly without transpiling.
+2. **Flags**:
+
+   * `--experimental-strip-types` → Removes type annotations (basic TS support).
+   * `--experimental-transform-types` → Handles TS-only syntax like `enum` & `namespace` (also strips types automatically).
+3. **Node.js v23.6+** – Type stripping is **on by default**, so you can run `.ts` files directly:
+
+   ```bash
+   node file.ts
+   ```
+
+   Only use `--experimental-transform-types` if your code uses enums/namespaces.
+4. **Limitations** – Feature is **experimental**; not all TS features are supported yet.
+5. **tsconfig.json** – Node’s TypeScript loader (Amaro) doesn’t use it for running, but you should still configure it for editor/`tsc` consistency.
+6. **Recommended TS version** – 5.7+ for best compatibility.
+
+---
+
+### **What You Need to Master**
+
+* **Know when to use each flag** (`--experimental-strip-types` vs `--experimental-transform-types`).
+* **Run TS directly** in Node.js v23.6+ without flags for simple type annotations.
+* **Understand limitations** → not all TS syntax works yet without transformation.
+* **Keep TS & Node updated** → for maximum feature support.
+* **Set up tsconfig.json** → for better type checking and editor experience even if Node doesn’t need it.
+
+---
+
+If you want, I can now give you a **one-page “Run TS in Node.js” quick cheat sheet** so you never have to reread long docs.
