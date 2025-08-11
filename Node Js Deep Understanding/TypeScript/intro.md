@@ -91,7 +91,7 @@
 
 ---
 
-### **What You Need to Master**
+### **What I Need to Master**
 
 * **When to choose ts-node** (needs type checking) vs **tsx** (faster, no type checking).
 * **How to install and run both**.
@@ -100,4 +100,44 @@
 
 ---
 
-If you want, I can now make you a **tiny table comparing ts-node, tsx, and native Node TS support** so you instantly know which to use in each case.
+
+# Running TypeScript Code Using Transpillation.
+
+
+### **What I Need to Know**
+
+1. **Transpilation** – Converts TS → JS so browsers/Node can run it.
+2. **Compiler** – Use `tsc` (TypeScript compiler) to transpile.
+3. **Steps**:
+
+   * Write `.ts` file.
+   * Install TypeScript:
+
+     ```bash
+     npm i -D typescript
+     ```
+   * Compile:
+
+     ```bash
+     npx tsc file.ts
+     ```
+   * Run JS output:
+
+     ```bash
+     node file.js
+     ```
+4. **Error Handling** – `tsc` stops compilation if type errors exist, preventing bad code from running.
+5. **npx** – Lets you run local packages without global install.
+
+---
+
+### **What You Need to Master**
+
+* **Using `tsc`** → compile `.ts` to `.js`.
+* **Reading and fixing compiler errors**.
+* **Strict typing discipline** → don’t ignore TS errors.
+* **Workflow** → write TS → compile with `tsc` → run JS.
+
+---
+
+If you want, I can now give you a **single “3-way to run TS” comparison table** for Native Node, Runners, and Transpilation so you instantly know which method to use.
