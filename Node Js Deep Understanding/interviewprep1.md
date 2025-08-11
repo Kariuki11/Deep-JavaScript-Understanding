@@ -45,9 +45,9 @@ It’s built on **Google’s V8 JavaScript engine** (the same one used in Chrome
    * Node.js can be run on Windows, macOS, and Linux.
    * With tools like Electron, you can build desktop applications using Node.js.
 
-   
 
-# What are some common applications of Node?
+
+# 2. What are some common applications of Node?
 
 
    Node.js is very versatile, and its **event-driven, non-blocking I/O** makes it a great fit for building fast, scalable network applications.
@@ -55,14 +55,12 @@ Here are some **common applications** where Node.js really shines:
 
 ---
 
-### **1. Real-Time Applications (RTAs)**
+### **a. Real-Time Applications (RTAs)**
 
 * **Examples:** Chat apps (WhatsApp Web), live notifications, online gaming.
 * Reason: WebSockets in Node.js allow real-time, bidirectional communication between server and client.
 
----
-
-### **2. RESTful APIs & Backend Services**
+### **b. RESTful APIs & Backend Services**
 
 * **Examples:** Backend APIs for mobile apps, web services for single-page applications (SPAs).
 * Reason: Handles many concurrent requests efficiently with low latency.
