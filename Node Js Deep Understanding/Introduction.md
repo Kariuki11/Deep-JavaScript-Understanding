@@ -381,7 +381,6 @@ WebAssembly.instantiate(wasmBuffer).then(wasmModule => {
 * Legacy `--debug` / `--debug-brk` / V8 Debug Protocol is no longer maintained.
 * Use `--inspect` instead.
 
----
 
 **What to Really Remember:**
 
@@ -391,7 +390,66 @@ WebAssembly.instantiate(wasmBuffer).then(wasmModule => {
 4. For remote debugging, use SSH tunnels, not open ports.
 5. Know your main flags: `--inspect`, `--inspect-brk`, `--inspect-wait`.
 
+
+### Fteching Data With Node Js
+
+**What is Undici?**
+
+* High-performance HTTP client for Node.js.
+* Powers Node.js’s native `fetch()` API.
+* Does **not** rely on Node’s built-in HTTP client — written from scratch.
+
+**Core Fetch API Usage**
+
+* **GET request**:
+
+  ```js
+  const res = await fetch(url);
+  const data = await res.json();
+  ```
+* **POST request**: Provide `method`, `headers`, and `body` in `fetch()` options.
+
 ---
+
+**3️. Customization**
+
+* `fetch(url, { method, headers, body })` lets you control request details.
+* Returns a **Promise** that resolves to a `Response` object.
+
+---
+
+**4️. Connection Pools**
+
+* `Pool` from `undici` lets you reuse HTTP connections for performance.
+* Useful for repeated calls to the same host.
+* Example: streaming data from Ollama API.
+
+---
+
+**5️. Streaming**
+
+* You can process large responses in chunks with `undici.stream()`.
+* Helpful for APIs returning continuous or large data (GitHub repos example).
+
+---
+
+**6️. OS Interaction**
+
+* Undici handles HTTP only; no OS access.
+* For OS-level APIs, you need other tools (e.g., WASI for WebAssembly).
+
+---
+
+**7️. Extra Good-to-Know**
+
+* Set **`User-Agent`** headers for many APIs (like GitHub) to work properly.
+* Always handle **HTTP status codes** before processing data.
+* Use **`TextDecoder`** for decoding streamed binary data into strings.
+
+---
+
+If you want, I can make a **single-page Undici Fetch API cheat sheet** with GET, POST, streaming, and pooling all in one place so you can reference it quickly while coding. That would make this info much easier to use in practice.
+
 
 
 
