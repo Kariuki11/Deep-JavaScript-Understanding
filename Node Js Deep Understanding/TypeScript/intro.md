@@ -138,3 +138,31 @@
 * **Strict typing discipline** → don’t ignore TS errors.
 * **Workflow** → write TS → compile with `tsc` → run JS.
 
+
+# Publishing Ts Packages.
+
+1. **Publishing TS Packages** – You publish **compiled JavaScript** (not raw `.ts`), with generated `.d.ts` type declarations.
+2. **main** in `package.json` → points to compiled `.js` file, not `.ts`.
+3. **Node v23.6+** strips types automatically but **not in `node_modules`**, so don’t publish raw TypeScript.
+4. **Avoid TS-only features** (e.g., `enum`, `namespace`) unless using `--experimental-transform-types` or `erasableSyntaxOnly` in TS 5.8+.
+5. **Type Declarations** (`.d.ts`) → generated before publishing (don’t commit to git).
+6. **CI/CD** – Use GitHub Actions to type-check code on PRs and run tests.
+7. **Minimize Published Package** → use `.npmignore` or `"files"` in `package.json` to exclude tests/fixtures but keep `!*.d.ts`.
+8. **nvm** – Use `.nvmrc` to specify Node version for the project.
+
+---
+
+## **What You Need to Master**
+
+* **Transpile TS to JS** and generate `.d.ts` before publishing.
+* **Correct `package.json` setup** → `main`, `types` fields point to compiled outputs.
+* **Use `.npmignore`** to ship only what’s needed.
+* **Automated Type Checking in CI** → separate from tests.
+* **Release Workflow** → generate declarations → run `npm publish`.
+* **Target Node LTS versions** when compiling (Node 18+ recommended).
+
+---
+
+If you want, I can now give you a **one-page “TS Package Publishing Checklist”** so you can publish without missing any step.
+
+
