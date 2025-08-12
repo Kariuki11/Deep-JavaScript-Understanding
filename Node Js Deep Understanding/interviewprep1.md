@@ -644,6 +644,30 @@ exec('ls', (err, stdout) => {
 # 12. HOW DO YOU CREATE A SERVER IN NODE.JS?
  
 
+ One can create a server in Node.js using the built-in **`http`** module.
+
+**Example:**
+
+```js
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('Hello from Node.js server!');
+});
+
+server.listen(3000, () => {
+  console.log('Server running on http://localhost:3000');
+});
+```
+
+**In short:**
+
+1. Import `http`.
+2. Use `http.createServer()` to handle requests and responses.
+3. Listen on a port with `.listen()`.
+
+
 
 
 
