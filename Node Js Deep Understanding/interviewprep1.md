@@ -624,6 +624,24 @@ The EventEmitter API is Node.js’s way to **react to things happening** — you
 
 # 11. What is a child process in Node.js and how are they created?
 
+A **child process** in Node.js is a separate program or script that runs alongside your main Node.js process.
+
+They’re created using Node’s built-in **`child_process`** module, which lets you run shell commands or other scripts.
+
+**Example:**
+
+```js
+const { exec } = require('child_process');
+
+exec('ls', (err, stdout) => {
+  if (err) throw err;
+  console.log(stdout);
+});
+```
+
+**In short:** Child processes let Node.js run other programs or commands in parallel.
+
+
 
 
 
