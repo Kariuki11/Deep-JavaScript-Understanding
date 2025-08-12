@@ -353,7 +353,7 @@ Here’s a simple diagram showing how **Node.js single-thread + event loop** wor
 4. The **event loop** checks these queues and runs the ready tasks on the single main thread.
 
 
-# WHAT IS MEANT BY SYCHRONOUS VS ASYNCHRONOUS?
+# 7. WHAT IS MEANT BY SYCHRONOUS VS ASYNCHRONOUS?
 
 **Synchronous vs Asynchronous** is about **how tasks are executed and whether the program waits for each task to finish before moving on**.
 
@@ -426,7 +426,75 @@ Slow task done
 
 ---
 
-If you want, I can give you a **side-by-side real-life analogy** that makes synchronous vs asynchronous instantly clear in your head.
+# 8. WHAT IS MEANT BY BLOCKING AND NON-BLOCKING?
+
+**Blocking vs Non-blocking** is about **whether a task stops (blocks) the program from doing anything else until it’s finished**.
+
+---
+
+### **1. Blocking**
+
+* The code **waits** for a task to finish before moving to the next line.
+* Other work can’t happen until the current task completes.
+* Common in **synchronous** code.
+
+**Example (Blocking file read):**
+
+```js
+const fs = require('fs');
+
+console.log("Start");
+const data = fs.readFileSync('file.txt', 'utf8'); // Blocks until file is read
+console.log(data);
+console.log("End");
+```
+
+**Output:**
+
+```
+Start
+(file reading happens here, everything else waits)
+<File contents>
+End
+```
+
+---
+
+### **2. Non-blocking**
+
+* The code **starts** a task and moves on without waiting for it to finish.
+* When the task is done, a **callback**, **promise**, or **event** handles the result.
+* Common in **asynchronous** code.
+
+**Example (Non-blocking file read):**
+
+```js
+const fs = require('fs');
+
+console.log("Start");
+fs.readFile('file.txt', 'utf8', (err, data) => { // Doesn't block
+  console.log(data);
+});
+console.log("End");
+```
+
+**Output:**
+
+```
+Start
+End
+<File contents>   (appears later when reading is done)
+```
+
+---
+
+**In short:**
+
+* **Blocking** → Wait until the task is finished (stops everything else).
+* **Non-blocking** → Start the task, keep going, handle result later.
+
+
+# 9. WHAT IS THE NODE.JS EVENT LOOP?
 
 
 
