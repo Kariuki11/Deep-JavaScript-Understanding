@@ -296,6 +296,62 @@ Here, `readFile` starts reading the file, but instead of waiting, Node.js contin
 If you want, I can also explain **how callbacks led to "callback hell"** and how Node moved toward **Promises** and **async/await** to make code cleaner.
 
 
+# 6. WHAT DOES IT MEAN THAT NODE.JS IS SINGLE THREADED?
+
+* It has **one main thread** that runs your JavaScript code.
+* That single thread handles all requests, one at a time, using the **event loop**.
+* Instead of creating a new thread for each request (like some other languages), Node uses **non-blocking, asynchronous I/O** so it can start a task, hand it off to the system to finish in the background, and move on to the next task without waiting.
+
+
+**Simple analogy:**
+Think of Node.js as **one waiter in a restaurant**:
+
+* The waiter takes an order (request), gives it to the kitchen (background I/O), and while the food is cooking, he takes other orders.
+* When the food is ready, the kitchen tells the waiter, and he serves it to the right table (callback or promise).
+* He doesn’t need extra waiters (threads) for each customer.
+
+---
+
+**Why this is powerful in Node.js:**
+
+* Uses less memory.
+* Can handle **thousands of concurrent requests** efficiently.
+* Best for **I/O-heavy tasks** like APIs, real-time apps, and streaming.
+
+
+
+Here’s a simple diagram showing how **Node.js single-thread + event loop** works:
+
+```
+        ┌──────────────────────────────┐
+        │        JavaScript Code        │
+        │  (Runs on ONE main thread)    │
+        └─────────────┬────────────────┘
+                      │
+                      ▼
+              ┌───────────────┐
+              │  Event Loop   │
+              └──────┬────────┘
+                     │
+     ┌───────────────┼────────────────┐
+     │               │                │
+     ▼               ▼                ▼
+┌─────────┐    ┌────────────┐    ┌──────────────┐
+│ Timer   │    │ I/O Tasks  │    │ Callbacks    │
+│ Queue   │    │ (File/API) │    │ / Promises   │
+└────┬────┘    └─────┬──────┘    └──────┬───────┘
+     │               │                 │
+     ▼               ▼                 ▼
+[Execute ready tasks when Event Loop picks them up]
+```
+
+**Flow in simple terms:**
+
+1. **Main thread** runs your code.
+2. Long tasks (file read, DB query, API call) are sent to the system to work **in the background**.
+3. When they finish, their **callbacks/promises** go into queues.
+4. The **event loop** checks these queues and runs the ready tasks on the single main thread.
+
 
 
 
