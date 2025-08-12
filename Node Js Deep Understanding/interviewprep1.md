@@ -108,7 +108,7 @@ Here are some **common applications** where Node.js really shines:
 * Reason: Node.js can render dynamic content before sending it to the browser, improving SEO and performance.
 
 
-# 3. How are Node Packages Managed?
+# 3. HOW ARE NODE PACKAGES MANAGED?
 
 Node packages are managed primarily using **npm (Node Package Manager)**, which is the default package manager installed with Node.js.
 There’s also **Yarn** and **pnpm** as alternatives, but npm is the most widely used.
@@ -196,7 +196,7 @@ g. **Publishing Packages**
 
 ---
 
-# 4. Explain importing and exporting in Node
+# 4. EXPLAIN IMPORTING AND EXPORTING IN NODE
 
 In Node.js, **importing** and **exporting** just means **sharing code between files**.
 
@@ -237,7 +237,7 @@ console.log(add(2, 3));
 * `export` / `import` → Modern JavaScript way.
   Both do the same thing: let files share code.
 
-#  5. What do you understand about Callbacks?
+#  5. WHAT DO YOU UNDERSTAND BY CALLBACKS?
 
 A **callback** in Node.js is simply **a function you pass to another function, to be run later when a task is finished**.
 
