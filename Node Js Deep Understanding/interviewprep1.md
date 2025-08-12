@@ -621,7 +621,8 @@ Hello, Kenneth!
 **In short:**
 The EventEmitter API is Node.js’s way to **react to things happening** — you can “emit” events and have functions that “listen” and run when those events occur.
 
-If you want, I can also show you **how the EventEmitter fits into Node’s Event Loop workflow** — that makes it easier to see *when* these events actually fire.
+
+# 11. What is a child process in Node.js and how are they created?
 
 
 
