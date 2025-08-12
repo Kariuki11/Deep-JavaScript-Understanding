@@ -641,7 +641,8 @@ exec('ls', (err, stdout) => {
 
 **In short:** Child processes let Node.js run other programs or commands in parallel.
 
-# 
+# 12. HOW DO YOU CREATE A SERVER IN NODE.JS?
+ 
 
 
 
