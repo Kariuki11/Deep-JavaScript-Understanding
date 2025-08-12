@@ -353,6 +353,9 @@ Here’s a simple diagram showing how **Node.js single-thread + event loop** wor
 4. The **event loop** checks these queues and runs the ready tasks on the single main thread.
 
 
+# What is meant by Synchronous vs Asynchronous?
+
+
 
 
 
