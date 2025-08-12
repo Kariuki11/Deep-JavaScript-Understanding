@@ -196,7 +196,47 @@ g. **Publishing Packages**
 
 ---
 
-If you want, I can give you a **flowchart of how npm manages dependencies behind the scenes** — from `npm install` to the creation of `node_modules`. That would make the process crystal clear.
+# Explain importing and exporting in Node
+
+In Node.js, **importing** and **exporting** just means **sharing code between files**.
+
+* **Exporting** → Make something (function, object, variable) available for other files.
+* **Importing** → Bring that something into another file so you can use it.
+
+
+
+**Two ways to do it:**
+
+1. **CommonJS (old style, default in Node)**
+
+```js
+// math.js
+module.exports = (a, b) => a + b; // export
+
+// app.js
+const add = require('./math'); // import
+console.log(add(2, 3));
+```
+
+2. **ES Modules (new style)**
+
+```js
+// math.js
+export function add(a, b) { return a + b; } // export
+
+// app.js
+import { add } from './math.js'; // import
+console.log(add(2, 3));
+```
+
+---
+
+**In short:**
+
+* `module.exports` / `require` → Old Node way.
+* `export` / `import` → Modern JavaScript way.
+  Both do the same thing: let files share code.
+
 
 
 
