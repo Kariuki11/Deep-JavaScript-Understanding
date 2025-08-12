@@ -129,7 +129,7 @@ a. **Installing Packages**
      npm install -g nodemon     # Global install
      ```
 
-2. **Tracking Dependencies**
+b. **Tracking Dependencies**
 
    * Dependencies are listed in the project’s `package.json` file.
    * Example:
@@ -144,11 +144,11 @@ a. **Installing Packages**
      }
      ```
 
-3. **Creating and Updating `package-lock.json`**
+c. **Creating and Updating `package-lock.json`**
 
    * This file locks the exact versions of dependencies and their sub-dependencies, ensuring consistent installs across environments.
 
-4. **Running Scripts**
+d. **Running Scripts**
 
    * npm can run custom commands defined in `package.json`.
    * Example:
@@ -166,7 +166,7 @@ a. **Installing Packages**
      npm run dev
      ```
 
-5. **Removing Packages**
+e. **Removing Packages**
 
    * To uninstall:
 
@@ -174,7 +174,7 @@ a. **Installing Packages**
      npm uninstall express
      ```
 
-6. **Updating Packages**
+f. **Updating Packages**
 
    * To update all:
 
@@ -182,7 +182,7 @@ a. **Installing Packages**
      npm update
      ```
 
-7. **Publishing Packages**
+g. **Publishing Packages**
 
    * Developers can create their own packages and publish them to the npm registry:
 
