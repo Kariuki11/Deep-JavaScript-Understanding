@@ -548,6 +548,18 @@ Here:
 * The **single-thread + event loop** model is why Node is **non-blocking**.
 
 
+# 10. WHAT DO YOU UNDERSTAND ABOUT LIVBUV?
+
+**libuv** is a C library that Node.js uses **behind the scenes** to make **non-blocking I/O** and the **event loop** work.
+
+* It lets Node handle tasks like reading files, making network requests, or running child processes **without pausing other code**.
+* It uses a **thread pool** and the OS’s features to do work in the background, then tells Node when it’s done.
+* It also helps Node work the same way on **Windows, macOS, and Linux**.
+
+**In short:** libuv is the “helper” that makes Node.js fast and efficient with I/O.
+
+
+
 
 
 
