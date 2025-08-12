@@ -496,6 +496,57 @@ End
 
 # 9. WHAT IS THE NODE.JS EVENT LOOP?
 
+The **Node.js Event Loop** is the **mechanism that allows Node.js to handle many tasks at the same time using a single thread**.
+
+It works by **running your code, delegating slow tasks (like file reads, database queries, API calls) to the system**, and then **coming back to process the results when they’re ready** — all without blocking the main thread.
+
+---
+
+### **How it works (step-by-step)**
+
+1. **Run your JavaScript code** (main thread starts executing).
+2. If a task takes time (e.g., reading a file), Node hands it to the system in the background.
+3. When the task finishes, the result (or callback) goes into a queue.
+4. The **event loop** checks the queue and runs those callbacks when it’s ready.
+5. This cycle continues until all tasks are done.
+
+---
+
+**Example:**
+
+```js
+console.log("Start");
+
+setTimeout(() => {
+  console.log("Task done");
+}, 2000);
+
+console.log("End");
+```
+
+**Output:**
+
+```
+Start
+End
+Task done
+```
+
+Here:
+
+* `"Start"` runs immediately.
+* `setTimeout` is sent to the background timer system.
+* `"End"` runs right away because the timer is still counting.
+* After 2 seconds, `"Task done"` runs when the event loop picks it up.
+
+---
+
+### **Why it matters**
+
+* Lets Node.js handle **thousands of concurrent requests** without creating thousands of threads.
+* Makes Node.js **fast and efficient** for I/O-heavy applications.
+* The **single-thread + event loop** model is why Node is **non-blocking**.
+
 
 
 
