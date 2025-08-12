@@ -47,7 +47,7 @@ It’s built on **Google’s V8 JavaScript engine** (the same one used in Chrome
 
 
 
-# 2. What are some common applications of Node?
+# 2. WHAT ARE SOME COMMON APPLCATION IN NODE?
 
 
    Node.js is very versatile, and its **event-driven, non-blocking I/O** makes it a great fit for building fast, scalable network applications.
@@ -238,6 +238,63 @@ console.log(add(2, 3));
   Both do the same thing: let files share code.
 
 #  5. What do you understand about Callbacks?
+
+A **callback** in Node.js is simply **a function you pass to another function, to be run later when a task is finished**.
+
+It’s like saying:
+*"Do this job, and when you’re done, call me back with the result."*
+
+---
+
+**Example:**
+
+```js
+function greet(name, callback) {
+  console.log("Hello " + name);
+  callback(); // run later
+}
+
+greet("Kenneth", function() {
+  console.log("Welcome to Node.js!");
+});
+```
+
+**Output:**
+
+```
+Hello Kenneth
+Welcome to Node.js!
+```
+
+---
+
+### **Why Callbacks are important in Node.js**
+
+* Node.js is **asynchronous** — it doesn’t wait for tasks like file reading or API calls to finish before moving on.
+* Callbacks let you handle the result **when the task is actually done** without blocking other code.
+
+---
+
+**Example with async task:**
+
+```js
+const fs = require('fs');
+
+fs.readFile('file.txt', 'utf8', function(err, data) {
+  if (err) {
+    console.log("Error reading file:", err);
+  } else {
+    console.log("File content:", data);
+  }
+});
+```
+
+Here, `readFile` starts reading the file, but instead of waiting, Node.js continues with other work. When reading is done, it **calls back** the function you gave it.
+
+---
+
+If you want, I can also explain **how callbacks led to "callback hell"** and how Node moved toward **Promises** and **async/await** to make code cleaner.
+
 
 
 
