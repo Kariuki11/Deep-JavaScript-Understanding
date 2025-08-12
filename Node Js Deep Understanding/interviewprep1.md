@@ -668,6 +668,43 @@ server.listen(3000, () => {
 3. Listen on a port with `.listen()`.
 
 
+# 13. EXPLAIN MIDDLEWARE?.
+
+**Middleware** is a function in Node.js (usually in **Express**) that sits **between** the request coming from the client and the response sent by the server.
+
+It can:
+
+* **Inspect** the request
+* **Modify** the request or response
+* **Run code**
+* **End the request-response cycle** or pass control to the **next middleware**
+
+---
+
+**Example in Express:**
+
+```js
+const express = require('express');
+const app = express();
+
+// Middleware example
+app.use((req, res, next) => {
+  console.log('Request URL:', req.url);
+  next(); // Pass to next middleware or route
+});
+
+app.get('/', (req, res) => {
+  res.send('Hello World');
+});
+
+app.listen(3000);
+```
+
+---
+
+**In short:** Middleware is like a **checkpoint** for requests — it can log, authenticate, parse data, handle errors, etc., before sending the final response.
+
+
 
 
 
