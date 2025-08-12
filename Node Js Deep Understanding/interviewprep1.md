@@ -558,6 +558,72 @@ Here:
 
 **In short:** libuv is the “helper” that makes Node.js fast and efficient with I/O.
 
+# 10. Explain the EventEmitter API
+
+The **EventEmitter API** in Node.js is a built-in feature that lets different parts of your application **communicate by sending and listening for events** — kind of like a “publish/subscribe” system inside your code.
+
+It’s provided by the `events` module in Node.js.
+
+---
+
+### **How it works**
+
+1. **Create an EventEmitter** object.
+2. **Emit** an event (signal that something happened).
+3. **Listen** for that event and run code when it happens.
+
+---
+
+**Example:**
+
+```js
+const EventEmitter = require('events');  // Import EventEmitter class
+const emitter = new EventEmitter();      // Create an emitter object
+
+// Listen for an event
+emitter.on('greet', (name) => {
+  console.log(`Hello, ${name}!`);
+});
+
+// Emit (trigger) the event
+emitter.emit('greet', 'Kenneth');
+```
+
+**Output:**
+
+```
+Hello, Kenneth!
+```
+
+---
+
+### **Common Methods in EventEmitter**
+
+| Method                                                       | What it does                                           |
+| ------------------------------------------------------------ | ------------------------------------------------------ |
+| `.on(event, listener)`                                       | Listen for an event (can trigger multiple times).      |
+| `.once(event, listener)`                                     | Listen only once; listener is removed after first run. |
+| `.emit(event, ...args)`                                      | Trigger an event with optional data.                   |
+| `.removeListener(event, listener)` / `.off(event, listener)` | Remove a specific listener.                            |
+| `.removeAllListeners(event)`                                 | Remove all listeners for an event.                     |
+
+---
+
+### **Where it’s used in Node.js**
+
+* **HTTP server requests** (`req.on('data', ...)`)
+* **Streams** (`stream.on('end', ...)`)
+* **File system watchers**
+* **Custom events** in your own apps
+
+---
+
+**In short:**
+The EventEmitter API is Node.js’s way to **react to things happening** — you can “emit” events and have functions that “listen” and run when those events occur.
+
+If you want, I can also show you **how the EventEmitter fits into Node’s Event Loop workflow** — that makes it easier to see *when* these events actually fire.
+
+
 
 
 
