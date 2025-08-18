@@ -1,5 +1,3 @@
-
-
 ## 🔹 1. What is Currying?
 Currying is the process of transforming a function with multiple arguments into a **sequence of functions**, each taking one argument at a time.
 
@@ -27,10 +25,9 @@ function curryAdd(a) {
 console.log(curryAdd(1)(2)(3)); // 6
 ```
 
-👉 Notice: Instead of calling `add(1, 2, 3)`, you call `curryAdd(1)(2)(3)`.
+**Notice:** Instead of calling `add(1, 2, 3)`, you call `curryAdd(1)(2)(3)`.
 Each function "remembers" the previous argument via **closures**.
 
----
 
 ## 🔹 2. Why is Currying Useful?
 
@@ -49,7 +46,6 @@ Interviewers expect you to know **practical benefits**:
 * **Event Handlers / Callbacks**: Handy when you want to pass some arguments ahead of time.
 * **Clean separation of concerns**: Each function handles one input.
 
----
 
 ## 🔹 3. How to Implement a Curry Utility Function
 
@@ -83,7 +79,7 @@ console.log(curriedSum(1, 2)(3));   // 6
 console.log(curriedSum(1)(2, 3));   // 6
 ```
 
-👉 Notice that the `curry` function allows flexible calls (`fn(1)(2)(3)` or `fn(1,2)(3)` etc.).
+**Notice** that the `curry` function allows flexible calls (`fn(1)(2)(3)` or `fn(1,2)(3)` etc.).
 
 ---
 
@@ -128,10 +124,10 @@ When asked about currying, here’s a **solid structure** you can use:
 
 ## 🔹 5. Common Interview Traps (and How to Work Around Them)
 
-✅ **Trap 1:** Forgetting that `fn.length` gives the number of expected params (important in a `curry(fn)` utility).
-✅ **Trap 2:** Confusing currying with partial application – clarify difference.
-✅ **Trap 3:** Writing overly complex code – start small with a simple 2-arg example, then scale up.
-✅ **Trap 4:** Not explaining *why it’s useful* – interviewers want applied knowledge, not just syntax.
+**Trap 1:** Forgetting that `fn.length` gives the number of expected params (important in a `curry(fn)` utility).
+**Trap 2:** Confusing currying with partial application – clarify difference.
+**Trap 3:** Writing overly complex code – start small with a simple 2-arg example, then scale up.
+**Trap 4:** Not explaining *why it’s useful* – interviewers want applied knowledge, not just syntax.
 
 ---
 
