@@ -182,6 +182,6 @@ console.log(num); // undefined
 num = 10;
 ```
 
-This shows **deep understanding** rather than memorization.
+The above shows **deep understanding** rather than memorization.
 
 
