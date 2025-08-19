@@ -773,6 +773,75 @@ process.nextTick(): Runs before the event loop continues, giving it higher prior
 
 setImmediate(): Runs in the check phase, after I/O events.
 
+# 20. Explain how Node.js handles file operations like reading and writing. What’s the difference between fs.readFile and fs.createReadStream?
+
+
+fs.readFile: Reads the entire file into memory → blocks large files.
+
+fs.createReadStream: Reads file in chunks → efficient for big files.
+
+# 21. What are streams in Node.js, and why are they useful?
+
+Streams let you process data in chunks instead of loading it all into memory. Types:
+
+Readable (e.g., fs.createReadStream)
+
+Writable (e.g., fs.createWriteStream)
+
+Duplex (both read & write, e.g., TCP sockets)
+
+Transform (modify data, e.g., zlib compression)
+
+They’re useful for handling large files, video streaming, or real-time data.
+
+# 22. How would you handle errors in a Node.js/Express.js application?
+
+Try/catch with async/await.
+
+Error-handling middleware in Express.
+
+# 23. What are the differences between npm and npx?
+
+npm: Installs packages.
+
+npx: Executes packages without installing globally.
+
+# 13. How do you implement authentication and authorization in a Node.js backend?
+
+Authentication: Verify identity (e.g., login with email/password + JWT).
+
+Authorization: Check permissions (e.g., roles like admin/user).
+Typically done with JWT or OAuth. Example:
+
+# 15. How do you manage routing in an Express.js application?
+
+Use app.get, app.post, etc. For modular apps, use express.Router().
+
+# 16. Explain clustering in Node.js and why it’s useful for scaling.
+
+Node.js runs on a single thread, so it can’t use all CPU cores. Clustering spawns multiple worker processes to handle requests in parallel.
+
+# 18. What is CORS, and how do you enable it in a Node.js/Express.js API?
+
+CORS (Cross-Origin Resource Sharing) allows APIs to be accessed from different domains.
+
+# 20 . What are some common security practices you apply in a Node.js backend?
+
+Validate user input (prevent SQL injection/XSS).
+
+Use helmet for HTTP headers.
+
+Encrypt passwords with bcrypt.
+
+Store secrets in .env.
+
+Use HTTPS & JWT expiration.
+
+# 21. Give an example of how you would use JWT (JSON Web Tokens) for user authentication in Node.js.
+
+1. Generate token on login:
+2. Protect route with middleware:
+
 
 
 
