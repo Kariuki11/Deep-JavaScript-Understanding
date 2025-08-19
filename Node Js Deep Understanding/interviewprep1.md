@@ -732,6 +732,48 @@ app.listen(3000);
 Node.js is **fast, scalable, and great for real-time apps**, but it’s **not ideal for CPU-heavy tasks** and can be tricky to manage in large, complex projects.
 
 
+# 15. What is the purpose of the package.json file in a Node.js project?
+
+
+Holds project metadata (name, version, description).
+
+Defines dependencies (dependencies, devDependencies).
+
+Contains scripts for automation (e.g., npm start, npm test).
+
+Specifies entry points like "main": "index.js".
+
+# 16. Explain the difference between require and import in Node.js.
+
+
+require: CommonJS module system (default in Node.js).
+
+const express = require("express");
+
+
+import: ES6 module system (enabled with "type": "module" in package.json).
+
+import express from "express";
+
+
+ import is more modern and supports tree-shaking, while require is synchronous.
+
+# 17. How do you handle environment variables in Node.js applications?
+
+Store them in a .env file and load using dotenv.
+
+# 18. What are middleware functions in Express.js? Can you give a real example?
+
+Middleware are functions that run between request and response. They can modify requests, run checks, or end the response.
+
+# 19. What is the difference between process.nextTick() and setImmediate()?
+
+
+process.nextTick(): Runs before the event loop continues, giving it higher priority.
+
+setImmediate(): Runs in the check phase, after I/O events.
+
+
 
 
 
