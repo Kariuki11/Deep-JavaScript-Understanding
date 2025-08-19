@@ -2,7 +2,7 @@ import phonenumbers
 from phonenumbers import geocoder, carrier, timezone
 
 # Replace this with your own number
-phone_number = "+250 728 150 834"
+phone_number = "+14155552671"  # Example: +1 415-555-2671
 
 # Parse the number
 parsed_number = phonenumbers.parse(phone_number)
