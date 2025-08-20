@@ -20,3 +20,9 @@ function cyclicRotation(A, K) {
 console.log(cyclicRotation([3, 8, 9, 7, 6], 3));
 
 // .slice method is an array method (Also available for strings) that returns a shallow part of an array without modifying the original array.
+// The modulo operator (%) gives the remainder after dividing one number by another.
+
+
+
+
+
