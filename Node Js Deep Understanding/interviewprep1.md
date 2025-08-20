@@ -842,6 +842,18 @@ Use HTTPS & JWT expiration.
 1. Generate token on login:
 2. Protect route with middleware:
 
+# What strategies do you use to scale a Node.js application?
+
+Horizontal scaling: Use multiple Node.js instances behind a load balancer (e.g., Nginx, Kubernetes, PM2 cluster mode).
+
+Vertical scaling: Increase CPU/memory resources of a single instance (less common long-term).
+
+Microservices architecture: Split the app into smaller services.
+
+Message queues: Use RabbitMQ, Kafka, or Redis to handle heavy async jobs.
+
+CDN + caching: Offload static assets and cache responses using Redis or Varnish.
+
 
 
 
