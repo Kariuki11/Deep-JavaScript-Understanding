@@ -1,10 +1,4 @@
-Got it 👍. I’ll give you a **comprehensive list of 30 QA (Quality Assurance) interview questions** ranging from **beginner to advanced/expert level**, along with **clear answers** that would help you in an interview setting.
 
----
-
-# ✅ 30 QA Interview Questions & Answers (Beginner → Expert)
-
----
 
 ## 🔹 Beginner Level (1–10)
 
