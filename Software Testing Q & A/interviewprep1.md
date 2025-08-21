@@ -19,44 +19,30 @@ A **test case** is a set of conditions, steps, and expected results created to v
 * **Test Case:** Step-by-step instructions with expected results.
 * **Test Scenario:** High-level description of what to test (end-to-end flow).
 
----
-
 **6. What is a Bug, Defect, and Error?**
 
 * **Error:** Mistake by a developer.
 * **Defect:** Flaw in the application found during testing.
 * **Bug:** Defect accepted by developers as a problem to be fixed.
 
----
-
 **7. What is Regression Testing?**
 Regression testing checks if **new code changes** break or affect existing functionality.
-
----
 
 **8. What is Smoke Testing?**
 Smoke testing is a **basic test** to check if the application’s core functionalities work before deeper testing.
 
----
-
 **9. What is Sanity Testing?**
 Sanity testing ensures **specific bug fixes or new features** work correctly without testing everything.
-
----
 
 **10. What are Functional and Non-Functional Testing?**
 
 * **Functional:** Tests features (login, payment).
 * **Non-Functional:** Tests performance, security, usability, scalability.
 
----
-
 ## 🔹 Intermediate Level (11–20)
 
 **11. What is the Software Development Life Cycle (SDLC)?**
 The SDLC is the process of **planning, developing, testing, deploying, and maintaining** software.
-
----
 
 **12. What is the Software Testing Life Cycle (STLC)?**
 The STLC includes:
