@@ -102,14 +102,11 @@ A structured set of **guidelines, tools, and libraries** used to create and main
 **24. What is Risk-Based Testing?**
 Testing is prioritized based on **risk impact and likelihood** (high-risk features get tested first).
 
----
-
 **25. What are Mocking and Stubbing in QA?**
 
 * **Mocking:** Creating fake objects to test dependencies.
 * **Stubbing:** Providing predefined responses for method calls.
 
----
 
 **26. How do you ensure quality in Agile projects?**
 
