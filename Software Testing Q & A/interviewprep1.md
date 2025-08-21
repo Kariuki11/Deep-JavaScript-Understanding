@@ -1,30 +1,18 @@
-
-
-## 🔹 Beginner Level (1–10)
-
 **1. What is Quality Assurance (QA)?**
 QA ensures that the software meets the required quality standards by **preventing defects** during the software development process. It focuses on **process-oriented** activities.
-
----
 
 **2. What is the difference between QA and QC?**
 
 * **QA (Quality Assurance):** Process-focused, prevents defects.
 * **QC (Quality Control):** Product-focused, finds defects after development.
 
----
-
 **3. What is the difference between Verification and Validation?**
 
 * **Verification:** Checks if the product is built **according to requirements** (are we building it right?).
 * **Validation:** Ensures the product **meets the user’s needs** (are we building the right thing?).
 
----
-
 **4. What is a Test Case?**
 A **test case** is a set of conditions, steps, and expected results created to validate a specific functionality of the software.
-
----
 
 **5. What is the difference between a Test Case and a Test Scenario?**
 
