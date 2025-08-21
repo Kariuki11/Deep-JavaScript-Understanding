@@ -54,63 +54,43 @@ The STLC includes:
 5. Test Execution
 6. Test Closure
 
----
-
 **13. What is Agile Testing?**
 Agile testing follows the **Agile methodology**, where testing is done continuously in sprints, and QA collaborates closely with developers and product owners.
 
----
 
 **14. What is the difference between Manual Testing and Automation Testing?**
 
 * **Manual:** Human testers execute test cases.
 * **Automation:** Uses tools (Selenium, Playwright, Cypress) to run tests automatically.
 
----
-
 **15. What is Black Box Testing vs White Box Testing?**
 
 * **Black Box:** Tests functionality without knowing code.
 * **White Box:** Tests internal code, logic, and structures.
 
----
-
 **16. What are Test Deliverables?**
 Artifacts provided during the testing process, such as Test Plan, Test Cases, Bug Reports, and Test Summary Reports.
-
----
 
 **17. What is a Test Plan?**
 A Test Plan is a **document outlining testing strategy, objectives, scope, schedule, resources, and deliverables**.
 
----
-
 **18. What is a Test Strategy?**
 A **high-level document** defining the overall testing approach, tools, levels of testing, and responsibilities.
-
----
 
 **19. What is Boundary Value Analysis (BVA)?**
 BVA tests input values at the **boundaries** (e.g., if input range is 1–100, test 0, 1, 100, 101).
 
----
-
 **20. What is Equivalence Partitioning?**
 It divides input data into **valid and invalid partitions** to reduce test cases (e.g., input 1–100 → partitions: <1, 1–100, >100).
-
----
 
 ## 🔹 Expert Level (21–30)
 
 **21. What is Continuous Testing in DevOps?**
 Continuous Testing means integrating automated tests into the **CI/CD pipeline** to ensure rapid feedback.
 
----
 
 **22. What is Test Automation Framework?**
 A structured set of **guidelines, tools, and libraries** used to create and maintain automated test scripts (e.g., Data-Driven, Hybrid, Page Object Model).
-
----
 
 **23. How do you prioritize test cases?**
 
@@ -118,8 +98,6 @@ A structured set of **guidelines, tools, and libraries** used to create and main
 * Risk & probability of failure
 * Frequency of use
 * Critical functionalities
-
----
 
 **24. What is Risk-Based Testing?**
 Testing is prioritized based on **risk impact and likelihood** (high-risk features get tested first).
