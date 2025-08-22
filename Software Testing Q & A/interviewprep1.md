@@ -39,34 +39,20 @@ Sanity testing ensures **specific bug fixes or new features** work correctly wit
 * **Functional:** Tests features (login, payment).
 * **Non-Functional:** Tests performance, security, usability, scalability.
 
-Perfect — you’ve already covered some of the **most common beginner QA questions** 👌. I’ll now add **15+ more beginner-friendly QA questions and answers** that often show up in interviews or training sessions:
-
----
-
 **11. What is Unit Testing?**
 Unit testing involves testing **individual modules or components** of the software to ensure they work correctly in isolation.
-
----
 
 **12. What is Integration Testing?**
 Integration testing verifies that **different modules or components work together** as expected.
 
----
-
 **13. What is System Testing?**
 System testing checks the **entire application as a whole** to ensure it meets requirements.
-
----
 
 **14. What is User Acceptance Testing (UAT)?**
 UAT is performed by **end-users or clients** to confirm that the system meets their needs and is ready for release.
 
----
-
 **15. What is Exploratory Testing?**
 Exploratory testing is an **informal, simultaneous learning and testing** approach where testers explore the system without predefined test cases.
-
----
 
 **16. What is Ad-hoc Testing?**
 Ad-hoc testing is **unplanned testing** without documentation, often used to quickly find defects.
