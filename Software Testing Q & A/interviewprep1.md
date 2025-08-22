@@ -98,29 +98,16 @@ A **document** describing the testing scope, objectives, resources, schedule, an
 **29. What is Test Strategy?**
 A **high-level document** outlining the overall testing approach, objectives, and principles for a project.
 
----
-
 **30. What is Test Data?**
 The **input data** used for executing test cases (both valid and invalid).
 
----
-
 **31. What is Defect Life Cycle?**
 The process a defect goes through from **identification → fixing → retesting → closure**.
-
----
 
 **32. What is Severity vs Priority in a Bug?**
 
 * **Severity:** How badly the bug affects the system (technical impact).
 * **Priority:** How quickly the bug should be fixed (business impact).
-
----
-
-✅ That’s 22 more in total (11–32), all **beginner-friendly**.
-
-Do you want me to also create a **sample one-line answer bank** (like flashcards/cheat sheet) so you can **memorize them quickly** for interviews?
-
 
 
 
