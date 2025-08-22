@@ -57,19 +57,13 @@ Exploratory testing is an **informal, simultaneous learning and testing** approa
 **16. What is Ad-hoc Testing?**
 Ad-hoc testing is **unplanned testing** without documentation, often used to quickly find defects.
 
----
-
 **17. What is the difference between Positive and Negative Testing?**
 
 * **Positive Testing:** Checks system with valid input (expected to pass).
 * **Negative Testing:** Checks system with invalid input (expected to fail gracefully).
 
----
-
 **18. What is End-to-End Testing?**
 End-to-End testing validates a **complete workflow** of the application, e.g., user logs in → makes a purchase → receives confirmation.
-
----
 
 **19. What is Black Box Testing?**
 Testing the application **without looking at internal code or logic**. Focus is only on inputs and outputs.
