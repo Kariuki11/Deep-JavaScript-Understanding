@@ -71,47 +71,29 @@ Testing the application **without looking at internal code or logic**. Focus is 
 **20. What is White Box Testing?**
 Testing the **internal logic, structure, and code** of the application. Usually done by developers.
 
----
-
 **21. What is Grey Box Testing?**
 Combination of **Black Box and White Box testing**, where testers know some internal details.
-
----
 
 **22. What is Compatibility Testing?**
 Testing to ensure the software works across **different browsers, devices, operating systems, or networks**.
 
----
-
 **23. What is Performance Testing?**
 Performance testing checks **speed, scalability, and stability** under load.
-
----
 
 **24. What is Load Testing?**
 Load testing verifies how the system behaves when subjected to **expected user traffic**.
 
----
-
-**25. What is Stress Testing?**
+-**25. What is Stress Testing?**
 Stress testing evaluates system behavior under **extreme or beyond normal load** conditions.
-
----
 
 **26. What is Usability Testing?**
 Usability testing ensures the application is **easy to use and user-friendly**.
 
----
-
 **27. What is Security Testing?**
 Security testing identifies **vulnerabilities** to protect against unauthorized access, attacks, or data breaches.
 
----
-
 **28. What is Test Plan?**
 A **document** describing the testing scope, objectives, resources, schedule, and approach.
-
----
 
 **29. What is Test Strategy?**
 A **high-level document** outlining the overall testing approach, objectives, and principles for a project.
