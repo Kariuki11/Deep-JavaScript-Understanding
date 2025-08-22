@@ -111,6 +111,309 @@ The process a defect goes through from **identification → fixing → retesting
 
 
 
+Got it — here are **66 strictly technical, mid→expert QA interview Q\&As** (no soft skills, no fluff). Each has a concise, practical answer.
+
+---
+
+### 1) What is the Test Pyramid and why is it useful?
+
+**A:** A layering strategy: **many unit**, **fewer service/integration**, **very few UI/E2E** tests. It improves feedback speed, stability, and maintenance cost.
+
+### 2) Test Pyramid vs Test Trophy?
+
+**A:** **Trophy** emphasizes more **integration/API** tests than unit-only focus, while still keeping **limited UI** tests. Use based on system risk & speed needs.
+
+### 3) What is MC/DC coverage?
+
+**A:** **Modified Condition/Decision Coverage** requires each boolean condition in a decision to **independently affect** the outcome at least once.
+
+### 4) What is mutation testing?
+
+**A:** Intentionally introduce small code changes (“mutants”). If tests **fail**, they “kill” the mutant. High kill-rate ⇒ strong test suite.
+
+### 5) What is property-based testing?
+
+**A:** Define **general properties/invariants**; the framework generates many inputs to falsify them (great for parsers, math, and data transforms).
+
+### 6) Pairwise/combinatorial testing—when and how?
+
+**A:** For inputs with many factors, test **all pairs** (or t-wise) using **orthogonal arrays**/tools to reduce cases while keeping high defect yield.
+
+### 7) Decision Table vs State Transition testing?
+
+**A:** **Decision tables** model complex business rules (conditions→actions). **State transition** models behavior across **states/events** with valid/invalid transitions.
+
+### 8) State transition coverage types?
+
+**A:** **State coverage**, **transition coverage**, **path coverage**, **n-switch coverage** (cover sequences of n transitions).
+
+### 9) How do you test time-based logic (DST/leap years)?
+
+**A:** Use **clock injection**/time freezing, test **DST shifts**, **leap years (Feb 29)**, **time zones**, boundary **00:00/23:59**, and **epoch overflow**.
+
+### 10) How do you verify floating-point boundaries?
+
+**A:** Test **exact bounds**, **just-inside/outside (ε)**, **rounding modes**, and **precision loss** in serialization/deserialization.
+
+---
+
+## API / Services
+
+### 11) What is idempotency and how do you test it?
+
+**A:** Multiple identical requests have the **same effect** (e.g., PUT, idempotency keys for POST). Re-send requests and verify **no duplicate side-effects**.
+
+### 12) How to test pagination?
+
+**A:** Check **page size**, **next/prev cursors**, **stable ordering**, **last page behavior**, and **consistent totals** under data churn.
+
+### 13) How to test filtering & sorting?
+
+**A:** Validate **field coverage**, **AND/OR logic**, **null handling**, **case sensitivity**, **locale collation**, and **stable tie-breaks**.
+
+### 14) Proper HTTP status code testing?
+
+**A:** Verify **2xx success**, **4xx client errors** (validation, auth), **5xx server errors**, and **problem+json** bodies where applicable.
+
+### 15) Testing rate limiting?
+
+**A:** Drive requests over thresholds; assert **429**, **Retry-After**, **X-RateLimit** headers, and **no partial side-effects**.
+
+### 16) How to test ETags/conditional requests?
+
+**A:** Use **If-None-Match/If-Modified-Since**; verify **304** on unchanged, **200** on change, and cache correctness.
+
+### 17) API schema/contract testing?
+
+**A:** Validate requests/responses against **OpenAPI/JSON Schema**; enforce **backward compatibility** via **consumer-driven contracts (e.g., Pact)**.
+
+### 18) OAuth2/JWT flows—what to test?
+
+**A:** **Token issuance/expiry**, **refresh**, **scope/claims authorization**, **invalid signature**, **clock skew**, **token revocation**.
+
+### 19) CORS testing?
+
+**A:** Check **preflight OPTIONS**, **Access-Control-Allow-\*** headers, **credentialed requests**, and deny **unexpected origins**.
+
+### 20) API resiliency patterns to test?
+
+**A:** **Retries with backoff/jitter**, **circuit breakers**, **timeouts**, **bulkheads**; simulate slow/failed dependencies and verify fallbacks.
+
+---
+
+## Performance & Reliability
+
+### 21) Throughput vs latency percentiles?
+
+**A:** **Throughput** = requests/sec. **Latency**: track **p50/p95/p99**; SLOs commonly use **p99** under **steady load**.
+
+### 22) Closed vs open workload models?
+
+**A:** **Closed**: fixed users + think time. **Open**: arrival rate (Poisson-like). Pick model matching **production traffic**.
+
+### 23) Think time and pacing—why matter?
+
+**A:** They avoid **coordinated omission**, making load tests mirror real **user behavior** and realistic concurrency.
+
+### 24) Ramp-up/ramp-down strategy?
+
+**A:** Gradually increase/decrease load to observe **auto-scaling**, **warmup effects**, and avoid false failure spikes.
+
+### 25) Using Little’s Law in perf testing?
+
+**A:** **L = λ × W** (users = arrival rate × response time). Sanity-check measured **concurrency** vs **latency/throughput**.
+
+### 26) Bottleneck triage?
+
+**A:** Correlate **APM traces**, **CPU/IO/mem**, **DB metrics**, **GC**, and **lock contention** with **slow endpoints**.
+
+### 27) Performance regression gates in CI?
+
+**A:** Fail pipeline if **latency/throughput/error rate** deviates beyond **baseline thresholds** with **statistical tolerance**.
+
+### 28) Soak/endurance testing?
+
+**A:** Long-duration load to reveal **memory leaks**, **resource exhaustion**, **connection pool depletion**, **time-rollover bugs**.
+
+### 29) Spike testing?
+
+**A:** Sudden load bursts; verify **autoscale**, **circuit breaker**, **graceful errors**, and **quick recovery**.
+
+### 30) Capacity planning validation?
+
+**A:** Model **peak + headroom**, test **N+1 node loss**, and verify **SLOs** at expected **max concurrency**.
+
+---
+
+## Web/Mobile & Frontend Quality
+
+### 31) What are Core Web Vitals and how to test them?
+
+**A:** **LCP, INP, CLS**. Measure in **lab** and **field**; set budgets; test different network/CPU throttles.
+
+### 32) How to do visual regression testing?
+
+**A:** **DOM-stable selectors**, **baseline screenshots**, **perceptual diffs**, tolerate **dynamic content** with masks/ignore-regions.
+
+### 33) Service Worker/PWA testing?
+
+**A:** **Offline**, **cache versioning**, **update strategies**, **push notifications**, **fallbacks** when cache stale.
+
+### 34) Responsive testing strategy?
+
+**A:** Test **breakpoints**, **orientation**, **DPR**, **zoom/viewport meta**, **touch vs keyboard** interactions.
+
+### 35) Accessibility (a11y) checks?
+
+**A:** **Semantic HTML**, **landmarks**, **labeling**, **color contrast**, **keyboard traps**, **focus order**, **ARIA** validity.
+
+### 36) Internationalization/localization testing?
+
+**A:** **Pluralization**, **RTL**, **date/number/currency**, **text expansion**, **locale sorting**, **IME input**.
+
+### 37) Network resilience in web apps?
+
+**A:** Test **offline/poor-network**, **retry queues**, **background sync**, **timeout UIs**, **partial renders**.
+
+### 38) Security headers in web apps?
+
+**A:** Verify **CSP**, **HSTS**, **X-Frame-Options/COEP/COOP**, **Referrer-Policy**, **Permissions-Policy**.
+
+---
+
+## Data, DB, and Pipelines
+
+### 39) How to test DB transactions & isolation?
+
+**A:** Validate **ACID**, check anomalies per level: **dirty read**, **non-repeatable read**, **phantoms** with concurrent sessions.
+
+### 40) Migration testing?
+
+**A:** **Backup & dry-run**, **forward + rollback**, **data transforms**, **zero-downtime** (Dual-write/expand-migrate-contract).
+
+### 41) Referential integrity tests?
+
+**A:** Verify **FK constraints**, **cascade rules**, **orphan prevention**, and **ON CONFLICT/UPSERT** logic.
+
+### 42) ETL/ELT data quality testing?
+
+**A:** **Schema conformance**, **nulls/ranges**, **duplicate keys**, **aggregations**, **reconciliation** between source/target.
+
+### 43) Event-driven processing semantics?
+
+**A:** Validate **at-least-once**, **exactly-once** (via **idempotent consumers**, **dedupe keys**), and **ordering** assumptions.
+
+### 44) Message queue DLQ testing?
+
+**A:** Force **poison messages**, assert **retry policy**, **DLQ routing**, **alerting**, and **replay** handling.
+
+### 45) Eventual consistency tests?
+
+**A:** Use **polling**/**outbox**, assert **read-after-write** behavior where guaranteed, and **sagas** for cross-service workflows.
+
+---
+
+## CI/CD, Environments, & Test Engineering
+
+### 46) Test impact analysis (TIA)?
+
+**A:** Run only tests affected by recent changes using **coverage maps**/**dependency graphs** to speed CI.
+
+### 47) Flaky test management?
+
+**A:** **Deterministic seeds**, **isolate state**, **network stubs**, **clock control**, **quarantine + fix** policy.
+
+### 48) Parallelism & sharding?
+
+**A:** Split tests by **historical duration** or **file count**; ensure **data isolation** (unique tenants/db/schema per worker).
+
+### 49) Test data management?
+
+**A:** **Factory fixtures**, **synthetic data**, **masked prod snapshots**, **idempotent seeds**, and **lifecycle cleanup**.
+
+### 50) Ephemeral environments?
+
+**A:** Spin **per-PR** envs with **IaC/containers** for realistic **E2E**; auto-teardown post-checks.
+
+### 51) Service virtualization?
+
+**A:** Simulate dependencies with **WireMock/Mountebank** to test **error cases**, **latency**, **rare responses**.
+
+### 52) Feature flag testing?
+
+**A:** Validate **on/off/mixed cohorts**, **migration paths**, **config drift**, and **safe defaults** on flag outage.
+
+### 53) Canary/Blue-Green validation?
+
+**A:** Compare **metrics/errors** between old/new; verify **rollback** speed and **sticky session** handling.
+
+### 54) Chaos testing basics?
+
+**A:** Inject **failures/latency** (kill pods, drop network) and assert **graceful degradation**, **alerts**, **SLOs**.
+
+---
+
+## Security & Quality Gates
+
+### 55) Mapping tests to OWASP Top 10?
+
+**A:** Create suites for **Injection**, **Auth/Session**, **XSS**, **Access control**, **Insecure deserialization**, **SSRF**, etc.
+
+### 56) Secrets management validation?
+
+**A:** Ensure **no secrets in repos/logs**, use **KMS/secret stores**, rotate and test **revocation**.
+
+### 57) Dependency vulnerability (SCA) gates?
+
+**A:** Scan SBOM, **fail CI** on high CVEs, verify **allow-lists**, **pinning**, and **upgrade paths**.
+
+### 58) SSRF test strategy?
+
+**A:** Attempt internal endpoints (e.g., **169.254.169.254**), blocked schemes, and **metadata service protections**.
+
+### 59) MFA/2FA testing?
+
+**A:** **TOTP/SMS/Push** flows, **backup codes**, **device trust**, **recovery** paths, and **replay protection**.
+
+### 60) Observability tests?
+
+**A:** Assert **structured logs**, **trace IDs propagation**, **metric labels**, and **PII scrubbing**.
+
+---
+
+## UI Automation Engineering (Playwright/Cypress/Selenium Concepts)
+
+### 61) Locator strategy best practices?
+
+**A:** Prefer **data-testid**/**role/name**; avoid brittle **XPath** on layout; ensure **stable, semantic** selectors.
+
+### 62) Auto-wait vs explicit waits?
+
+**A:** Use framework **auto-wait** for **visible/attached/stable**; only add **explicit waits** for **network/async** events.
+
+### 63) Handling iframes and shadow DOM?
+
+**A:** Switch to **frame context**; for shadow DOM, use **piercing selectors** (if supported) or expose **test hooks**.
+
+### 64) File upload/download automation?
+
+**A:** Use APIs like **setInputFiles**/**download listeners**; validate **content-type**, **size**, and **checksum**.
+
+### 65) Network stubbing & assertions?
+
+**A:** Intercept **requests/responses**, **stub** dependencies, assert **payloads**, **headers**, and **retry behavior**.
+
+### 66) Parallel E2E tests without cross-talk?
+
+**A:** **Isolated contexts**/**fresh users**, **unique test data**, **server-side tenant isolation**, and **idempotent teardown**.
+
+---
+
+If you want, I can turn any subset into a **cheat-sheet PDF** or **flashcards**, or tailor these to **Playwright** for your Generous Circle app (login, signup, emails, API, etc.).
+
+
+
+
 
 
 ## 🔹 Intermediate Level (11–20)
