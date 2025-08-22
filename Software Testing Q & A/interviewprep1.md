@@ -68,8 +68,6 @@ End-to-End testing validates a **complete workflow** of the application, e.g., u
 **19. What is Black Box Testing?**
 Testing the application **without looking at internal code or logic**. Focus is only on inputs and outputs.
 
----
-
 **20. What is White Box Testing?**
 Testing the **internal logic, structure, and code** of the application. Usually done by developers.
 
