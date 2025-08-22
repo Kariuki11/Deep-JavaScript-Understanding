@@ -39,6 +39,133 @@ Sanity testing ensures **specific bug fixes or new features** work correctly wit
 * **Functional:** Tests features (login, payment).
 * **Non-Functional:** Tests performance, security, usability, scalability.
 
+Perfect — you’ve already covered some of the **most common beginner QA questions** 👌. I’ll now add **15+ more beginner-friendly QA questions and answers** that often show up in interviews or training sessions:
+
+---
+
+**11. What is Unit Testing?**
+Unit testing involves testing **individual modules or components** of the software to ensure they work correctly in isolation.
+
+---
+
+**12. What is Integration Testing?**
+Integration testing verifies that **different modules or components work together** as expected.
+
+---
+
+**13. What is System Testing?**
+System testing checks the **entire application as a whole** to ensure it meets requirements.
+
+---
+
+**14. What is User Acceptance Testing (UAT)?**
+UAT is performed by **end-users or clients** to confirm that the system meets their needs and is ready for release.
+
+---
+
+**15. What is Exploratory Testing?**
+Exploratory testing is an **informal, simultaneous learning and testing** approach where testers explore the system without predefined test cases.
+
+---
+
+**16. What is Ad-hoc Testing?**
+Ad-hoc testing is **unplanned testing** without documentation, often used to quickly find defects.
+
+---
+
+**17. What is the difference between Positive and Negative Testing?**
+
+* **Positive Testing:** Checks system with valid input (expected to pass).
+* **Negative Testing:** Checks system with invalid input (expected to fail gracefully).
+
+---
+
+**18. What is End-to-End Testing?**
+End-to-End testing validates a **complete workflow** of the application, e.g., user logs in → makes a purchase → receives confirmation.
+
+---
+
+**19. What is Black Box Testing?**
+Testing the application **without looking at internal code or logic**. Focus is only on inputs and outputs.
+
+---
+
+**20. What is White Box Testing?**
+Testing the **internal logic, structure, and code** of the application. Usually done by developers.
+
+---
+
+**21. What is Grey Box Testing?**
+Combination of **Black Box and White Box testing**, where testers know some internal details.
+
+---
+
+**22. What is Compatibility Testing?**
+Testing to ensure the software works across **different browsers, devices, operating systems, or networks**.
+
+---
+
+**23. What is Performance Testing?**
+Performance testing checks **speed, scalability, and stability** under load.
+
+---
+
+**24. What is Load Testing?**
+Load testing verifies how the system behaves when subjected to **expected user traffic**.
+
+---
+
+**25. What is Stress Testing?**
+Stress testing evaluates system behavior under **extreme or beyond normal load** conditions.
+
+---
+
+**26. What is Usability Testing?**
+Usability testing ensures the application is **easy to use and user-friendly**.
+
+---
+
+**27. What is Security Testing?**
+Security testing identifies **vulnerabilities** to protect against unauthorized access, attacks, or data breaches.
+
+---
+
+**28. What is Test Plan?**
+A **document** describing the testing scope, objectives, resources, schedule, and approach.
+
+---
+
+**29. What is Test Strategy?**
+A **high-level document** outlining the overall testing approach, objectives, and principles for a project.
+
+---
+
+**30. What is Test Data?**
+The **input data** used for executing test cases (both valid and invalid).
+
+---
+
+**31. What is Defect Life Cycle?**
+The process a defect goes through from **identification → fixing → retesting → closure**.
+
+---
+
+**32. What is Severity vs Priority in a Bug?**
+
+* **Severity:** How badly the bug affects the system (technical impact).
+* **Priority:** How quickly the bug should be fixed (business impact).
+
+---
+
+✅ That’s 22 more in total (11–32), all **beginner-friendly**.
+
+Do you want me to also create a **sample one-line answer bank** (like flashcards/cheat sheet) so you can **memorize them quickly** for interviews?
+
+
+
+
+
+
 ## 🔹 Intermediate Level (11–20)
 
 **11. What is the Software Development Life Cycle (SDLC)?**
