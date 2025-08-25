@@ -120,21 +120,21 @@ The **Test Pyramid** emphasizes having many unit tests, fewer integration tests,
 
 **35 What is MC/DC coverage?**
 
-**A:*Modified Condition/Decision Coverage** requires each boolean condition in a decision to **independently affect** the outcome at least once.
+**Modified Condition/Decision Coverage** requires each boolean condition in a decision to **independently affect** the outcome at least once.
 
-**35 What is mutation testing?**
+**36 What is mutation testing?**
 
-**A:** Intentionally introduce small code changes (“mutants”). If tests **fail**, they “kill” the mutant. High kill-rate ⇒ strong test suite.
+It's a software testing technique where small changes (mutations) are intentionally introduced into the program’s source code (like changing == to != or + to -) to check if the existing test suite detects the errors.
 
-### 5) What is property-based testing?
+### 37 What is property-based testing?
 
-**A:** Define **general properties/invariants**; the framework generates many inputs to falsify them (great for parsers, math, and data transforms).
+It's a testing approach where instead of writing specific input-output test cases, you define general properties (rules or invariants) that should always hold true for your code.
 
-### 6) Pairwise/combinatorial testing—when and how?
+### 38 Pairwise/combinatorial testing—when and how?
 
-**A:** For inputs with many factors, test **all pairs** (or t-wise) using **orthogonal arrays**/tools to reduce cases while keeping high defect yield.
+This is where you design test cases so that all possible pairs of input parameters are covered at least once, instead of testing every possible combination.
 
-### 7) Decision Table vs State Transition testing?
+**39 Decision Table vs State Transition testing?**
 
 **A:** **Decision tables** model complex business rules (conditions→actions). **State transition** models behavior across **states/events** with valid/invalid transitions.
 
