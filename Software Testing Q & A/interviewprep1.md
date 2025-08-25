@@ -126,17 +126,25 @@ The **Test Pyramid** emphasizes having many unit tests, fewer integration tests,
 
 It's a software testing technique where small changes (mutations) are intentionally introduced into the program’s source code (like changing == to != or + to -) to check if the existing test suite detects the errors.
 
-### 37 What is property-based testing?
+**37 What is property-based testing?**
 
 It's a testing approach where instead of writing specific input-output test cases, you define general properties (rules or invariants) that should always hold true for your code.
 
-### 38 Pairwise/combinatorial testing—when and how?
+**38 Pairwise/combinatorial testing—when and how?**
 
-This is where you design test cases so that all possible pairs of input parameters are covered at least once, instead of testing every possible combination.
+Pairwise (combinatorial) testing is a software testing technique where you design test cases so that all possible pairs of input parameters are covered at least once, instead of testing every possible combination.
 
 **39 Decision Table vs State Transition testing?**
 
-**A:** **Decision tables** model complex business rules (conditions→actions). **State transition** models behavior across **states/events** with valid/invalid transitions.
+* **Decision Table Testing** → Focuses on testing **different combinations of inputs/conditions** and their expected outputs. It’s like a truth table that shows what should happen for each possible input scenario. Best when business rules are complex.
+
+* **State Transition Testing** → Focuses on testing **different states of a system and valid/invalid transitions** between them based on events or inputs. Best when the system’s behavior depends on its **current state** (e.g., login → logged in → logout).
+
+👉 **Key difference:** Decision tables test **input conditions and rules**, while state transition tests **system behavior across states.**
+
+
+
+**Decision tables** model complex business rules (conditions→actions). **State transition** models behavior across **states/events** with valid/invalid transitions.
 
 ### 8) State transition coverage types?
 
