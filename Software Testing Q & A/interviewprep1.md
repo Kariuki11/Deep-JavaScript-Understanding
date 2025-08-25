@@ -118,11 +118,11 @@ It's A layering strategy: **many unit**, **fewer service/integration**, **very f
 
 The **Test Pyramid** emphasizes having many unit tests, fewer integration tests, and very few end-to-end tests for speed and maintainability, while the **Test Trophy** shifts the focus toward having more integration tests for higher confidence in real-world behavior, with fewer unit and end-to-end tests.
 
-### 3) What is MC/DC coverage?
+**35 What is MC/DC coverage?**
 
-**A:** **Modified Condition/Decision Coverage** requires each boolean condition in a decision to **independently affect** the outcome at least once.
+**A:*Modified Condition/Decision Coverage** requires each boolean condition in a decision to **independently affect** the outcome at least once.
 
-### 4) What is mutation testing?
+**35 What is mutation testing?**
 
 **A:** Intentionally introduce small code changes (“mutants”). If tests **fail**, they “kill” the mutant. High kill-rate ⇒ strong test suite.
 
