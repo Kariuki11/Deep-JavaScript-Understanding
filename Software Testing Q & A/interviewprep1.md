@@ -114,7 +114,7 @@ The process a defect goes through from **identification → fixing → retesting
 
 It's A layering strategy: **many unit**, **fewer service/integration**, **very few UI/E2E** tests. It improves feedback speed, stability, and maintenance cost.
 
-### 2) Test Pyramid vs Test Trophy?
+**34 Test Pyramid vs Test Trophy?**
 
 **Trophy** emphasizes more **integration/API** tests than unit-only focus, while still keeping **limited UI** tests. Use based on system risk & speed needs.
 
