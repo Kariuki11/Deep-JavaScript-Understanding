@@ -110,18 +110,13 @@ The process a defect goes through from **identification → fixing → retesting
 * **Priority:** How quickly the bug should be fixed (business impact).
 
 
+**33 What is the Test Pyramid and why is it useful?**
 
-Got it — here are **66 strictly technical, mid→expert QA interview Q\&As** (no soft skills, no fluff). Each has a concise, practical answer.
-
----
-
-### 1) What is the Test Pyramid and why is it useful?
-
-**A:** A layering strategy: **many unit**, **fewer service/integration**, **very few UI/E2E** tests. It improves feedback speed, stability, and maintenance cost.
+It's A layering strategy: **many unit**, **fewer service/integration**, **very few UI/E2E** tests. It improves feedback speed, stability, and maintenance cost.
 
 ### 2) Test Pyramid vs Test Trophy?
 
-**A:** **Trophy** emphasizes more **integration/API** tests than unit-only focus, while still keeping **limited UI** tests. Use based on system risk & speed needs.
+**Trophy** emphasizes more **integration/API** tests than unit-only focus, while still keeping **limited UI** tests. Use based on system risk & speed needs.
 
 ### 3) What is MC/DC coverage?
 
