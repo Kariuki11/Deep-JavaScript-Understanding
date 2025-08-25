@@ -140,15 +140,14 @@ Pairwise (combinatorial) testing is a software testing technique where you desig
 
 * **State Transition Testing** → Focuses on testing **different states of a system and valid/invalid transitions** between them based on events or inputs. Best when the system’s behavior depends on its **current state** (e.g., login → logged in → logout).
 
-👉 **Key difference:** Decision tables test **input conditions and rules**, while state transition tests **system behavior across states.**
+**40 State transition coverage types?**
+
+* **State Coverage** → Each state is tested at least once.
+* **Transition Coverage** → Each transition between states is tested.
+* **Transition Pair Coverage** → Each pair of consecutive transitions is tested.
+* **Path Coverage** → All possible paths through the state machine are tested.
 
 
-
-**Decision tables** model complex business rules (conditions→actions). **State transition** models behavior across **states/events** with valid/invalid transitions.
-
-### 8) State transition coverage types?
-
-**A:** **State coverage**, **transition coverage**, **path coverage**, **n-switch coverage** (cover sequences of n transitions).
 
 ### 9) How do you test time-based logic (DST/leap years)?
 
