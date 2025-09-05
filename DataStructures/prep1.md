@@ -31,6 +31,54 @@ The difference is that the storage structure has data stored in the memory of th
 
 ### **7. What is a stack data structure? What are the applications of stack?**
 
+        A stack is a data structure that is used to represent the state of an application at a particular point in time. The stack consists of a series of items that are added to the top of the stack and then removed from the top. It is a linear data structure that follows a particular order in which operations are performed. LIFO (Last In First Out) or FILO (First In Last Out) are two possible orders. A stack consists of a sequence of items. The element that's added last will come out first.
+                                Following are some applications for stack data structure:
+
+                                        It acts as temporary storage during recursive operations
+                                        Redo and Undo operations in doc editors
+                                        Reversing a string
+                                        Parenthesis matching
+                                        Postfix to Infix Expressions
+                                        Function calls order
+
+### **8. What are different operations available in stack data structure?**
+
+                push: This adds an item to the top of the stack. The overflow condition occurs if the stack is full.
+                pop: This removes the top item of the stack. Underflow condition occurs if the stack is empty.
+                top: This returns the top item from the stack.
+                isEmpty: This returns true if the stack is empty else false.
+                size:  This returns the size of the stack.
+
+### **9. What is a queue data structure? What are the applications of queue?**
+                A queue is a linear data structure that allows users to store items in a list in a systematic manner. The items are added to the queue at the rear end until they are full, at which point they are removed from the queue from the front. Queues are commonly used in situations where the users want to hold items for a long period of time, such as during a checkout process. A good example of a queue is any queue of customers for a resource where the first consumer is served first.
+
+                        Following are some applications of queue data structure:
+
+                                Breadth-first search algorithm in graphs
+                                Operating system: job scheduling operations, Disk scheduling, CPU scheduling etc.
+                                Call management in call centres
+
+### **10. What are different operations available in queue data structure?**
+                enqueue: This adds an element to the rear end of the queue.  Overflow conditions occur if the queue is full.
+                dequeue: This removes an element from the front end of the queue. Underflow conditions occur if the queue is empty.
+                isEmpty: This returns true if the queue is empty or else false.
+                rear: This returns the rear end element without removing it.
+                front: This returns the front-end element without removing it.
+                size: This returns the size of the queue.
+
+### **11. Differentiate between stack and queue data structure.**
+
+(Look at the Sheet.)
+
+        
+
+
+
+
+
+
+
+
 
 
 
