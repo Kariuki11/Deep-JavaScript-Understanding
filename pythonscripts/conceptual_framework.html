@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Conceptual Framework (Landscape)</title>
+<style>
+  @page { size: A4 landscape; margin: 20mm; }
+  html,body { height:100%; margin:0; font-family: Arial, Helvetica, sans-serif; }
+  body { display:flex; align-items:center; justify-content:center; background:#f6f6f6; }
+
+  .canvas-wrap {
+    width: 1200px; height: 700px;
+    background: white; box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    border-radius: 6px; padding: 18px;
+  }
+
+  svg { width:100%; height:100%; }
+
+  .box { fill:#fff; stroke:#204060; stroke-width:2; rx:6; ry:6; }
+  .box-dashed { fill: rgba(32,64,96,0.02); stroke:#204060; stroke-dasharray:8 6; stroke-width:2; rx:8; ry:8; }
+  .box-moderator { fill:#fff; stroke:#b04220; stroke-width:2; rx:6; ry:6; }
+  .label { font-size:14px; fill:#123; font-weight:600; }
+  .sub { font-size:12px; fill:#123; font-weight:400; }
+  .arrow { stroke:#204060; stroke-width:2; fill:none; marker-end: url(#arrowhead); }
+  .arrow-dashed { stroke:#b04220; stroke-width:1.6; stroke-dasharray:6 6; fill:none; marker-end: url(#arrowhead); }
+  .title { font-size:16px; fill:#0b3b5c; font-weight:700; text-anchor:middle; }
+</style>
+</head>
+<body>
+<div class="canvas-wrap">
+  <svg viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid meet">
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#204060" />
+      </marker>
+    </defs>
+
+    <!-- Title -->
+    <text x="600" y="32" class="title">Conceptual Framework: Inventory Practices → Food Waste Minimization</text>
+
+    <!-- Independent Variables container -->
+    <rect x="40" y="70" width="420" height="540" class="box-dashed"></rect>
+    <text x="60" y="95" class="label">Independent Variables</text>
+
+    <!-- Foundational Practices -->
+    <rect x="70" y="120" width="360" height="90" class="box"></rect>
+    <text x="90" y="150" class="label">Foundational Practices</text>
+    <text x="90" y="170" class="sub">• FIFO • Setting par levels • Auditing</text>
+
+    <!-- Technological Integration -->
+    <rect x="70" y="230" width="360" height="80" class="box"></rect>
+    <text x="90" y="260" class="label">Technological Integration</text>
+    <text x="90" y="280" class="sub">• IMS • Analytics & AI</text>
+
+    <!-- Holistic Management -->
+    <rect x="70" y="330" width="360" height="90" class="box"></rect>
+    <text x="90" y="360" class="label">Holistic Management & Culture</text>
+    <text x="90" y="380" class="sub">• Menu planning • Portion control • Staff training</text>
+
+    <!-- 4th IV -->
+    <rect x="70" y="440" width="360" height="80" class="box"></rect>
+    <text x="90" y="470" class="label">Supply Chain & Logistics</text>
+    <text x="90" y="490" class="sub">• Procurement • Distribution efficiency</text>
+
+    <!-- Arrows from IVs to merge point -->
+    <line x1="430" y1="160" x2="600" y2="300" class="arrow"/>
+    <line x1="430" y1="270" x2="600" y2="300" class="arrow"/>
+    <line x1="430" y1="380" x2="600" y2="300" class="arrow"/>
+    <line x1="430" y1="480" x2="600" y2="300" class="arrow"/>
+
+    <!-- Single arrow to DV -->
+    <line x1="600" y1="300" x2="880" y2="300" class="arrow"/>
+
+    <!-- Dependent Variable -->
+    <rect x="880" y="240" width="240" height="120" class="box"></rect>
+    <text x="1000" y="270" class="label" text-anchor="middle">Food Waste Minimization</text>
+    <text x="1000" y="290" class="sub" text-anchor="middle">• Reduced waste volume</text>
+    <text x="1000" y="310" class="sub" text-anchor="middle">• Lower costs</text>
+
+    <!-- Moderator (between IVs and DV) -->
+    <rect x="640" y="380" width="200" height="80" class="box-moderator"></rect>
+    <text x="740" y="405" class="label" text-anchor="middle">Moderator</text>
+    <text x="740" y="425" class="sub" text-anchor="middle">Government Policies</text>
+    <text x="740" y="445" class="sub" text-anchor="middle">Cost</text>
+
+    <!-- Moderator arrow to main arrow -->
+    <line x1="740" y1="380" x2="740" y2="310" class="arrow-dashed"/>
+  </svg>
+</div>
+</body>
+</html>
