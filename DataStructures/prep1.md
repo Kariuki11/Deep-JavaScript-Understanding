@@ -70,7 +70,8 @@ The difference is that the storage structure has data stored in the memory of th
 
 (Look at the Sheet.)
 
-        
+
+**12. How to implement a queue using stack?**
 
 
 
