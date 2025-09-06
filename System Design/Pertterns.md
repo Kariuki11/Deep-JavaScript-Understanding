@@ -206,6 +206,35 @@ Consistency guarantees
 Failure recovery logic
 Sync intervals and latency
 
+## 14. Service registry and discovery pattern
+It's a system that keeps track of all active service instances so they can find and communicate with each other dynamically.
+
+When to use it: In microservices architectures where services need to scale and relocate frequently.
+
+Key tools/services: Consul, Eureka, etcd
+
+Things to discuss in interviews:
+
+Dynamic service registration
+DNS vs service API discovery
+Load balancing strategies
+Handling stale entries and failures
+
+## 15. Bulkhead pattern
+It's a pattern that **isolates system components** so a failure in one doesn’t cascade into others.
+
+When to use it: To improve fault tolerance in systems where multiple services share the same resources.
+
+Key tools/services: Resilience4j, circuit breakers, thread pools
+
+Things to discuss in interviews:
+
+Isolation boundaries and fallback logic
+Partitioning critical vs non-critical workloads
+Graceful degradation under load
+Testing bulkhead boundaries
+
+
 
 
 
