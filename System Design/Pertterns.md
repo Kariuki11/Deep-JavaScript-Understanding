@@ -192,6 +192,20 @@ Aggregation logic and reducers
 Error handling and fallback mechanisms
 Orchestration vs choreography
 
+## 13. Write-behind cache pattern
+A caching pattern where updates are first written to the cache, then asynchronously persisted to the database.
+
+When to use it: When high write throughput is needed and durability can tolerate slight delays.
+
+Key tools/services: Redis + background workers
+
+Things to discuss in interviews:
+
+Cache coherence
+Consistency guarantees
+Failure recovery logic
+Sync intervals and latency
+
 
 
 
