@@ -23,5 +23,14 @@ Managing packages in your Node.js project is done using the Node Package Manager
 # 7. How is Node.js better than other frameworks?
 Node.js is a server-side JavaScript runtime environment built on top of the V8 JavaScript engine, the same engine that powers Google Chrome. It makes Node.js very fast and efficient, as well as highly scalable. 
 
+# 8. What is a fork in node JS?
+The Fork method in Node.js creates a new child process that runs a separate Node.js instance and can be useful for running CPU-intensive tasks or creating a cluster of Node.js servers.
+
+# 9. List down the two arguments that async. First, does the queue take as input?
+The async.queue function in Node.js takes two arguments as input: a worker function and an optional concurrency limit. It is used to create a task queue executed in parallel.
+
+# 10. What is the purpose of the module.exports?
+The module. exports object in Node.js is used to export functions, objects, or values from a module and is returned as the value of the require() function when another module requires a module.
+
 
 
