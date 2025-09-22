@@ -24,4 +24,3 @@ console.log(smallestMissingPositive([1, 4, 3]));
 
 
 // .filter is an array method that creates a new array containing elements that pass a test (Condition).
-
